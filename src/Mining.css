@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+
+.mining {
+
+  margin-right: 20px;
+  float: left;
+  color: red;
+  font-size: 1.2em;
+
+}
+/* 我的龙 */
+.MyDragon{
+  width: 1133px;
+  height: 975px;
+  background: #242424;
+  color: #FFFFFF;
+}
+
+.Dragon{
+  margin-left: 8%;
+}
+.Dragon_tall{
+ background-color: red;
+}
+.Dragon_head h2{
+  color: #FFFFFF;
+  float: left;
+}
+.Dragon_head select{
+  float: right;
+  color: #FFFFFF;
+  background-color:#191919  ;
+}
+
+.Dragonmation{
+  float: left;
+  width: 165px;
+  height: 220px;
+  background: #3D3D3D;
+  margin: 10px 20px 20px 10px;
+  color: #FFFFFF;
+}
+.Dragon_body{
+  clear: both;
+}

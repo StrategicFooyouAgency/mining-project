@@ -1,0 +1,31 @@
+@import '~antd/dist/antd.css';
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd';
+  src: url(./assets/fonts/HelveticaNeueLTStd-Lt.otf);
+}
+
+* {
+  font-family: 'HelveticaNeueLTStd'!important;
+}
+
+#root,.app,.app-layout {
+  height: 100%;
+  
+}
+.app-layout {
+  padding-top: 80px;
+}
+
+.logo {
+
+  margin-right: 20px;
+  float: left;
+  color: #fff;
+  font-size: 1.2em;
+
+}
+
+span{
+  display: inline-block;
+}

@@ -1,0 +1,104 @@
+#egg {
+    
+    display: flex;
+    justify-content: space-between;
+    height: 456px;
+    margin-bottom: 25px;
+    .egg-details {
+        width: 572px;
+        display: flex;
+        flex-direction: column;
+        background: #3D3D3D;
+        .egg-figure {
+            flex: 1 1 0;
+            .tips {
+                margin-top: 17px;
+                padding: 10px 0;
+                color: #fff;
+                text-align: center;
+                height: 58px;
+                background: #DE544D;
+            }
+            .egg-image {
+                margin: 30px auto 0;
+                display: block;
+                width: 200px;
+                height: 230px;
+                background: #ECC53F;
+                border-radius: 50%;
+            }
+        }
+        .egg-params {
+            flex: 0 0 auto;
+            height: 85px;
+            padding: 0 30px;
+            background: #595959;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .column {
+                width: 120px;
+                text-align: center;
+                color: #fff;
+                .content {
+                    line-height: 33px;
+                    height: 33px;
+                    background: #404040;                    
+                }
+            }
+        }
+    }
+    .egg-buy {
+        width: 355px;
+        background: #3D3D3D;
+        .item {
+            margin: 56px 20px 25px;
+            .item-header {
+                height: 48px;
+                border-bottom: 1px solid #c0c0c0;
+                display: flex;
+                .icon {
+                    width: 32px;
+                    height: 37px;
+                    background: #ECC53F;
+                    border-radius: 50%;
+                }
+                .content {
+                    margin-left: 14px;
+                    h4 {
+                        margin: 0;
+                        font-size: 12px;
+                        color: #C0C0C0;
+                    }
+                    .num {
+                        color: #fff;
+                    }
+                }
+            }
+            .item-des {
+                color: #c0c0c0;
+            }
+            .item-btns {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                button {
+                    width: 136px;
+                    height: 36px;
+                    border: none;
+                    background: transparent;
+                    color: #fff;
+                    &.bg {
+                        background: linear-gradient(-90deg, #8AC649, #49C66C);
+                    }
+                    &.border {
+                        border: 1px solid rgba(74, 198, 107, 0.8);
+                    }
+                }
+            }
+
+
+        }
+    }
+    
+}

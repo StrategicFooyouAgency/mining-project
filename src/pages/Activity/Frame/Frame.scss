@@ -1,0 +1,110 @@
+#frame {
+    padding: 20px;
+    color: #fff;
+
+    .statis {
+        padding: 40px 10px;
+        border-radius: 5px;
+        border: 2px solid #8D8D8D;
+        background: #595959;
+        h2 {
+            padding-left: 20px;
+            font-size: 2em;
+            color: #fff;
+        }
+        .statis-content {
+            display: flex;
+            .statis-item {
+                flex: 1 1 0;
+                display: flex;
+                justify-items: center;
+                .avatar {
+                    margin-right: 20px;
+                    width: 40px;
+                    height: 40px;
+                    background: #fff;
+                    border-radius: 50%;
+                }
+                .statis-item-content{
+                    h3 {
+                        margin: 0;
+                        color: #fff;
+                        font-size: 1.3em;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+        
+
+    }
+    .swap {
+        padding: 20px;
+        .swap-title {
+            margin: 20px 0;
+            padding: 10px 0;
+            font-size: 2.5em;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+        .swap-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .swap-item {
+                margin: 20px 0;
+                // padding: 20px;
+                width: 45%;
+                //border: 1px solid #fff;
+                //border-radius: 5px;
+                //background: #595959;
+
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    .icon {
+                        display: flex;
+                        &::before,&::after {
+                            content: "";
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50px;
+
+                        }
+                        &::before {
+                            background: #D06D2C;
+                        }
+                        &::after {
+                            background: #70AC48;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    .title {
+                        .title-top {
+                            position: relative;
+                            padding-right: 40px;
+                            color: #CB7E44;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                margin-top: auto;
+                                margin-bottom: auto;
+                                width: 1em;
+                                height: 1em;
+                                background: #CB7E44;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

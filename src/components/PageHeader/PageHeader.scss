@@ -1,0 +1,58 @@
+.page-header {
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 80px;
+    background: #313131;
+    .header-container {
+        display: flex;
+        .header-nav {
+            flex: 1 1 0;
+            line-height: 80px;
+            font-size: 18px;
+            font-family: Arial;
+            background: transparent;
+            .ant-menu-item { 
+                padding: 0;
+                .nav-item {
+                    display: block;
+                    padding: 0 20px;
+                   
+                    background: linear-gradient(0deg, #313131, #313131);
+                    &:hover {
+                        background: linear-gradient(0deg, #313131, #313131);
+                    }
+                    &.active {
+                        transition: none;
+                        background: url(../../assets/images/nav-selected.png) no-repeat center 60px,
+                                    linear-gradient(0deg, #313131, #313131);
+                        color: #FF8C00!important
+                           
+                    }
+                
+                }
+            }
+            
+        }
+        .myaccount {
+            padding:0 42px;
+            color: #fff;
+            font-size: 18px;
+            font-family: Arial;
+            img {
+                margin-right: 15px;
+            }
+           
+            &:hover {
+                color: #FF8C00;
+                background: linear-gradient(0deg, #313131, #313131);
+            }
+            &.active {
+                background: url(../../assets/images/nav-selected.png) no-repeat center 60px,
+                            linear-gradient(0deg, #313131, #313131);
+                color: #FF8C00;
+            }
+        }
+    }
+}

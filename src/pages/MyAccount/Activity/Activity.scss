@@ -1,0 +1,49 @@
+#accountActivity {
+	padding: 90px 80px 200px;
+	width: 100%;
+    height: 100%;
+    border: 5px solid;
+    border-image: url(../../../assets/images/border.png);
+    border-image-slice: 140 49%;
+	border-image-width: 140px 150px;
+	background: url(../../../assets/images/account-bg01.png) no-repeat border-box center / cover;
+
+	.seting_outline {
+		.seting_h1 {
+			display: flex;
+			font-weight: 800;
+			
+			align-items: flex-end;
+			h1 {
+				margin: 0;
+				font-size: 44px;
+				color: #fff;
+				line-height: 1em;
+			}
+			a {
+				margin-left: 20px;
+				font-size: 26px;
+				color: #00B4EF;
+				line-height: 1em;
+			}
+		}
+		.acctount-activity {
+			margin-top: 50px;
+			font-size: 26px;
+			color: #fff;
+			font-weight: 700;
+			.acctount-acivity--item {
+				background: transparent;
+				line-height: 50px;
+				margin: 0;
+			
+				dd {
+					display: flex;
+					.time {
+						width: 100px;
+					};
+				}
+			}
+		}
+	}
+}

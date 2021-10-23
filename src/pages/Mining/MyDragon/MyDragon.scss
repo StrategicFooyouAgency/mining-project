@@ -1,0 +1,124 @@
+#MyDragon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+   
+    .ant-tabs-nav {
+        margin: 0;
+        &::before {
+            border-bottom: none;
+        }
+
+        .ant-tabs-tab {
+            line-height: 42px;
+            height: 42px;
+            padding:0 25px;
+            color: #fff;
+            &.ant-tabs-tab-active {
+                background: #404040;
+                .ant-tabs-tab-btn {
+                    
+                    color: #fff;
+    
+                }
+            }
+        }
+        .ant-tabs-ink-bar {
+            
+            background: #61C65F;
+        }
+        
+    }
+    .ant-tabs-content-holder {
+        padding: 40px 90px;
+        .dragons {
+            header {
+                height: 60px;
+                display: flex;
+                justify-content: space-between;
+                .header-title {
+                    display: flex;
+                    align-items: center;
+                    h2 {
+                        margin: 0;
+                        font-size: 40px;
+                        line-height: 60px;
+                        color: #fff;
+                        font-weight: 700;
+                    }
+                    .ant-select {
+                        margin-left: 40px;
+                    }
+                }
+                .header-select {
+                    display: flex;
+                    align-items: center;
+                    .ant-select:first-of-type {
+                        margin-right: 16px;
+                    }
+                }
+                .ant-select {
+                    width: 115px;
+                    height: 36px;
+                    background: #191919;
+                    border: 1px solid #404040;
+                    .ant-select-selector {
+                        background: #191919;
+                        color: #fff;
+                    }
+                }
+            }
+            .dragon-list {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                    width: 165px;
+                    height: 220px;
+                    background: #3D3D3D;
+                    display: flex;
+                    margin:15px 0px;
+                    span {
+                        text-align: center;
+                        margin: auto;
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    // 我的龙列表
+
+    // 分页
+    .page {
+        margin-bottom: 36px;
+        height: 26px;
+        line-height: 26px;
+        display: flex;
+        justify-content: center;
+        .page-btn {
+            width: 38px;
+            // height: auto;
+            background: rgba(224, 224, 224, 0);
+            border: 1px solid #E0E0E0;
+        }
+        .current {
+            margin-left: 22px;
+            width: 38px;
+            text-align: center;
+            color: #fff;
+            background: rgba(224, 224, 224, 0);
+            border: 1px solid #E0E0E0;
+        }
+        .total-page {
+            margin-left: 6px;
+            margin-right: 22px;
+            color: #808080;
+        }
+        
+    }
+    
+}

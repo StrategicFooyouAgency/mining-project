@@ -1,0 +1,115 @@
+#rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+   
+    .ant-tabs-nav {
+        margin: 0;
+        &::before {
+            border-bottom: none;
+        }
+
+        .ant-tabs-tab {
+            line-height: 42px;
+            height: 42px;
+            padding:0 25px;
+            color: #fff;
+            &.ant-tabs-tab-active {
+                background: #404040;
+                .ant-tabs-tab-btn {
+                    
+                    color: #fff;
+    
+                }
+            }
+        }
+        .ant-tabs-ink-bar {
+            
+            background: #61C65F;
+        }
+        
+    }
+    .ant-tabs-content-holder {
+        padding: 60px 90px;
+    }
+
+    // 列表样式
+    .tokens {
+        li {
+            display: flex;
+            padding: 25px;
+            height: 90px;
+            background: #2C2C2C;
+            border: 1px solid #666666;
+            margin-bottom: 25px;
+            .icon {
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background: #FFC200;
+                border-radius: 50%;
+                font-size: 31px;
+                font-family: HarmonyOS Sans;
+                font-weight: 900;
+                color: #242424;
+            }
+            .content {
+                margin-left: 10px;
+                .title {
+                    color: #fff;
+                }
+                .address {
+                    color: #a2a2a2;
+                }
+            }
+            .total {
+                flex: 1 1 0;
+                display: flex;
+                justify-content: flex-end;
+
+                h3 {
+                    margin: 0;
+                    color: #fff;
+                }
+                div {
+                    // width: 160px;
+                    color: #FFC200;
+                    text-align: center;
+                }
+               
+            }
+        }
+    }
+
+    // 分页
+    .page {
+        margin-bottom: 36px;
+        height: 26px;
+        line-height: 26px;
+        display: flex;
+        justify-content: center;
+        .page-btn {
+            width: 38px;
+            // height: auto;
+            background: rgba(224, 224, 224, 0);
+            border: 1px solid #E0E0E0;
+        }
+        .current {
+            margin-left: 22px;
+            width: 38px;
+            text-align: center;
+            color: #fff;
+            background: rgba(224, 224, 224, 0);
+            border: 1px solid #E0E0E0;
+        }
+        .total-page {
+            margin-left: 6px;
+            margin-right: 22px;
+            color: #808080;
+        }
+        
+    }
+    
+}

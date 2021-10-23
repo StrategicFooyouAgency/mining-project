@@ -1,0 +1,37 @@
+.seting_outline{
+	margin-left: 50px;
+	padding-top: 0%;
+	padding-bottom: 0%;
+}
+.seting_h1{
+	color: rgb(0, 0, 0);
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.seting_h2{
+	color: rgb(0, 0, 0);
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.setting_input_title{
+	color: #313131;
+	font-size: 1rem;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.seting_floatlayout_out{
+	background-color: rgb(255, 255, 255);
+}
+
+div.seting_background{
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1rem;
+	font-weight: normal;
+}
+.log-list{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}

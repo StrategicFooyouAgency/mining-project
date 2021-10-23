@@ -1,0 +1,101 @@
+.assets-line{
+		width: 4px;
+		height: 30px;
+		background: linear-gradient(0deg, #8AC649, #49C66C);
+		padding-top: 1.875rem;
+		float: left;
+}
+.assets-text{
+	float: left;
+	margin-left: 0.625rem;
+	font-size: 1.5rem;
+}
+.eth-num{
+	font-size: 2.5rem;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	margin-top: 2.5rem;
+}
+.eth-num-pos{
+	margin-left:3.125rem;
+	float: left;
+}
+.eth-pos{
+	margin-left: 7.5rem;
+	float: left;
+}
+.btn{
+	background: linear-gradient(0deg, #8AC649, #49C66C);
+	width: 14.125rem;
+	height: 4rem;
+	margin-left: 3.125rem;
+	margin-top: 3.125rem;
+	color: #fff;
+	text-align: center;
+	font-size: 1.125rem;
+	/* border: 0rem; */
+	/* border-style: hidden */
+	border-width: 0.0625rem;
+}
+
+.btnDe{
+	width: 14.125rem;
+	height: 4rem;
+	margin-left: 3.125rem;
+	margin-top: 3.125rem;
+	/* color: #fff; */
+	text-align: center;
+	font-size: 1.125rem;
+	/* border: 0rem; */
+	border-color: linear-gradient(0deg, #8AC649, #49C66C);
+	border-width: 0.0625rem;
+	/* background: #fff; */
+}
+.address-pos{
+	font-size: 1.125rem;
+	text-align: center;
+	margin-top: 1.875rem;
+}
+.dragos-pos{
+	font-size: 1.425rem;
+	margin-top: 2.3125rem;
+	text-align: center;
+}
+.dragos-text{
+	margin-top: 0.375rem;
+	font-weight: bold;
+}
+.dragos-num{
+	color: #EB4F4F;
+	font-weight: bold;
+}
+.items-pos{
+	font-size: 1.425rem;
+	margin-top: 1.875rem;
+	text-align: center;
+}
+.items-num{
+	color: #4AC66C;
+	font-weight: bold;
+}
+.food-num{
+	color: #EB9C1F;
+	font-weight: bold;
+}
+.row-offset{
+	margin-top: 2.5rem;
+}
+.act-test{
+	color: #4AC66C;
+	font-size: 1.2rem;
+	line-height: 2.1;
+	margin-left: 5.5rem;
+}
+.date-pos{}
+.log-list{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3.5%;
+}

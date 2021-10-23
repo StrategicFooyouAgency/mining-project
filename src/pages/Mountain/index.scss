@@ -1,0 +1,47 @@
+.mountain {
+  width: 1203px;
+  margin: 0 auto;
+  .ant-layout-sider {
+    background: url("../../assets/images/mountain/left-border.png"),
+      url("../../assets/images/sider-bg.png");
+    width: 387px;
+    height: 1574px;
+    ul {
+      width: 378px;
+      height: 100%;
+      padding-top: 125px;
+      background: none;
+      border: 0;
+      li {
+        width: 269px;
+        height: 67px;
+        margin: 12px auto;
+        padding: 15px 24px;
+        .menu-icon {
+          width: 36px;
+          height: 36px;
+          margin-right: 36px;
+          display: inline-block;
+          background: #90aadb;
+          border-radius: 50%;
+        }
+        .menu-label {
+          position: absolute;
+          font-size: 31px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+      }
+    }
+    .ant-menu-light .ant-menu-item:hover,
+    .ant-menu-light .ant-menu-item-active,
+    .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+    .ant-menu-light .ant-menu-submenu-active,
+    .ant-menu-light .ant-menu-submenu-title:hover {
+      background-color: blue;
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: blue;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.player-info{
+	width: 268px;
+	height: 174px;
+	background: linear-gradient(0deg, #8AC649, #49C66C);
+	padding-top: 30px;
+}
+
+.playerID{
+	color: #fff;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.playerMail{
+	color: #fff;
+	text-align: center;
+}
+.playerQR{
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	width: 200px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
