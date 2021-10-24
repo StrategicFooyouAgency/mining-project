@@ -8,13 +8,10 @@ import "./Activity.scss";
 
 // 组件
 import Frame from './Frame/Frame';
-import FrontPage from './FrontPage/FrontPage';
-import MyEgg from './MyEgg/MyEgg';
-import MyDragon from './MyDragon/MyDragon';
-import SubMining from './Mining/Mining';
+import Staking from './Staking/Staking';
+import Activity from './Activity/Activity';
+import Chest from './Chest/Chest';
 import Rank from './Rank/Rank';
-
-
 
 const {Content, Sider } = Layout;
 
@@ -30,17 +27,13 @@ export default class Mining extends Component {
                                     <Link to="/activity/frame">Frame</Link>
                                 </Menu.Item>
                                 <Menu.Item key="1">
-                                    <Link to="/activity/front">Front page</Link>
+                                    <Link to="/activity/staking">Staking</Link>
                                 </Menu.Item>
                                 <Menu.Item key="2">
-                                    <Link to="/activity/egg">My Egg</Link>
+                                    <Link to="/activity/activity">activity</Link>
                                 </Menu.Item>
                                 <Menu.Item key="3">
-                                    <Link to="/activity/dragon">My Dragon</Link>
-                                </Menu.Item>
-                                <Menu.Item key="4">
-                                    <Link to="/activity/mining">Mining</Link>
-                                    <span></span>
+                                    <Link to="/activity/chest">chest</Link>
                                 </Menu.Item>
                                 <Menu.Item key="5">
                                     <Link to="/activity/rank">Rank</Link>
@@ -50,10 +43,9 @@ export default class Mining extends Component {
                         <Content>
                             <Switch>
                                 <Route path="/activity/frame" component={Frame} />
-                                <Route path="/activity/front" component={FrontPage} />
-                                <Route path="/activity/egg" component={MyEgg} />
-                                <Route path="/activity/dragon" component={MyDragon} />
-                                <Route path="/activity/mining" component={SubMining} />
+                                <Route path="/activity/Staking" component={Staking} />
+                                <Route path="/activity/activity" component={Activity} />
+                                <Route path="/activity/chest" component={Chest} />
                                 <Route path="/activity/rank" component={Rank} />
                                 <Redirect to="/activity/frame"/>
                             </Switch>

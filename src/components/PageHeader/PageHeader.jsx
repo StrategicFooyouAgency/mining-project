@@ -33,10 +33,10 @@ class PageHeader extends Component {
                             <a className="nav-item" href="http://game.dedragon.com">GAME</a>
                         </Menu.Item>
                     </Menu>
-                    {/* <NavLink to="/myaccount" className="myaccount" >
+                    <NavLink to="/myaccount" className="myaccount" >
                         <img src={img1}/>
                         SIGN IN
-                    </NavLink> */}
+                    </NavLink>
                 </div>
             </Header>
         );
