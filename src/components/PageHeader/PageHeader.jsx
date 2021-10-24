@@ -17,7 +17,7 @@ class PageHeader extends Component {
                         <Menu.Item key="home" >
                             <NavLink className="nav-item" to="/" exact="true">HOME</NavLink>
                         </Menu.Item>
-                        <Menu.Item key="activity" disabled>
+                        <Menu.Item key="activity">
                             <NavLink className="nav-item" to="/activity">STAKING</NavLink>
                         </Menu.Item>
                         <Menu.Item key="marketpalce" disabled>
