@@ -151,10 +151,10 @@ class Account extends Component {
 									</div>
 								</div>
 							</TabPane>
-							<TabPane tab="Game II " key="2">
+							<TabPane tab="Game II " key="2" disabled>
 								Game II
 							</TabPane>
-							<TabPane tab="Game III" key="3">
+							<TabPane tab="Game III" key="3" disabled>
 								Game III								
 							</TabPane>
 						</Tabs>

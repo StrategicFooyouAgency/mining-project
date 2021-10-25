@@ -1,0 +1,345 @@
+.LeaseInfo {
+    width: 100%;
+    background-color: #E8DBB8;
+    display: flex;
+    padding-top: 20px;
+
+    > .LeaseInfo-title {
+        color: #fff;
+        font-weight: 900;
+        font-size: 35px;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    > .LeaseInfo-l {
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > .LeaseInfo-l-id {
+            width: 178px;
+            height: 67px;
+            line-height: 67px;
+            text-align: center;
+            font-size: 26px;
+            color: #fff;
+            font-weight: 900;
+            background-color: #676F96;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        > .LeaseInfo-l-text1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #2251A8;
+            margin-top: 40px;
+        }
+    }
+
+    > .LeaseInfo-r {
+        flex: 1;
+        width: 0;
+        border-left: 3px solid #95560F;
+        padding: 0 20px;
+
+        > .LeaseInfo-r-t {
+            display: flex;
+            justify-content: space-between;
+
+            > .LeaseInfo-r-t-l {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+
+                > .LeaseInfo-r-t-l-text {
+                    font-size: 22px;
+                    color: #95560F;
+                    font-weight: 900;
+                }
+
+                > .LeaseInfo-r-t-l-text0 {
+                    font-size: 30px;
+                    color: #95560F;
+                    font-weight: 900;
+                }
+
+            }
+
+            > .LeaseInfo-r-t-r {
+                > .LeaseInfo-r-t-r-btn {
+                    width: 307px;
+                    //height: 67px;
+                    //line-height: 67px;
+                    text-align: center;
+                    font-size: 26px;
+                    color: #fff;
+                    font-weight: 900;
+                    background-color: #676F96;
+                    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > .LeaseInfo-r-b {
+            font-size: 26px;
+            color: #95560F;
+            font-weight: 900;
+        }
+    }
+
+    > .LeaseInfo-rent {
+        width: 260px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 800;
+        color: #95560F;
+        background: url("../images/rentBg.png") no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        position: absolute;
+        bottom: -70%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.Dragon-Information {
+    width: 100%;
+    background-color: #E8DBB8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > .Dragon-Information-title {
+        color: #fff;
+        font-weight: 900;
+        font-size: 35px;
+        position: absolute;
+        top: -17%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    > .Dragon-Information-item {
+        width: 145px;
+        height: 181px;
+        background: url("../images/listItemBg.png") no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > .Dragon-Information-item-dragon {
+            width: 92px;
+            height: 123px;
+            background: url("../images/long.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.Build-Information {
+    width: 100%;
+    background-color: #E8DBB8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    > .Build-Information-title {
+        color: #fff;
+        font-weight: 900;
+        font-size: 35px;
+        position: absolute;
+        top: -17%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    > .Build-Information-item {
+        width: 145px;
+        height: 181px;
+        background: url("../images/listItemBg.png") no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > .Build-Information-item-dragon {
+            width: 92px;
+            height: 123px;
+            background: url("../images/long.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+
+}
+
+.Island-Information {
+    > .Island-Information-title {
+        color: #fff;
+        font-weight: 900;
+        font-size: 35px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Island-Information-item {
+        width: 252px;
+        height: 315px;
+        background: url("../images/listItemBg.png") no-repeat;
+        background-size: 100% 100%;
+        >.Island-Information-lock {
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >.Island-Information-lock-icon {
+                width: 68px;
+                height: 78px;
+                background: url("../images/lock.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.rent {
+    width: 100%;
+    background-color: #E8DBB8;
+
+    > .rent-top {
+        display: flex;
+        justify-content: center;
+
+        > .rent-top-l {
+            width: 336px;
+            height: 201px;
+            background: url("../images/IdBg.png") no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            > .rent-top-title {
+                font-size: 30px;
+                font-weight: 800;
+                color: #514837;
+            }
+
+            > .rent-top-text {
+                font-size: 26px;
+                font-weight: 800;
+                color: #514837;
+            }
+
+        }
+
+        > .rent-top-r {
+            font-size: 30px;
+            font-weight: 800;
+            color: #95560F;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            > div:first-child {
+                padding-left: 20px;
+            }
+
+            .rent-top-r-feeBtn {
+                display: inline-block;
+                width: 115px;
+                height: 54px;
+                line-height: 58px;
+                background: #676F96;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                border-radius: 5px;
+                font-size: 30px;
+                color: #fff;
+                font-weight: 800;
+                text-align: center;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    > .rent-middle {
+        display: flex;
+        justify-content: center;
+
+        > .ant-form.ant-form-vertical {
+            > .ant-form-item {
+                >.ant-form-item-label {
+                    >label {
+                        font-size: 30px;
+                        font-weight: 800;
+                        color: #95560F;
+                    }
+                }
+                >.ant-form-item-control {
+                    >.ant-form-item-control-input{
+                        >.ant-form-item-control-input-content{
+                            >.ant-input-password{
+                                color: #fff;
+                                background: #676F96;
+                                >.ant-input {
+                                    color: #fff;
+                                    background: #676F96;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    > .rent-bottom {
+        display: flex;
+        justify-content: space-around;
+
+        > .rent-bottom-rent {
+            width: 260px;
+            height: 150px;
+            background: url("../images/rentBtn.png") no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: 800;
+            color: #95560F;
+            cursor: pointer;
+        }
+
+        > .rent-bottom-cancel {
+            width: 260px;
+            height: 150px;
+            background: url("../images/cancelBtn.png") no-repeat;
+            background-size: 100% 100%;
+            font-size: 40px;
+            font-weight: 800;
+            color: #0F5195;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}

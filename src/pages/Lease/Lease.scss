@@ -1,0 +1,119 @@
+.Lease-wrapper {
+    width: 100%;
+    min-height: 1700px;
+    background: url("../../assets/images/global-bg.png") no-repeat;
+    background-size: 100% 100%;
+    .Lease {
+        max-width: 1200px;
+        margin: 0 auto;
+        >.Lease-header {
+            width: 100%;
+            height: 122px;
+            background: url("./images/timeTab.png") no-repeat ;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+        }
+        >.Lease-body{
+            display: flex;
+            >.Lease-body-left {
+                width: 387px;
+                height: 1461px;
+                background: url("./images/bg-left.png") no-repeat;
+                background-size: 100% 100%;
+
+                >.Lease-body-left-border {
+                    width: 100%;
+                    height: 100%;
+                    border: 28px solid;
+                    border-image: url(../../assets/images/border.png);
+                    border-image-slice: 140 49%;
+                    border-image-width: 140px 150px;
+                    padding: 40px 40px;
+                }
+            }
+            >.Lease-body-right {
+                flex: 1;
+                width: 0;
+                background: url("./images/bg-right.png") no-repeat;
+                background-size: 100% 100%;
+                >.Lease-body-right-border {
+                    width: 100%;
+                    height: 100%;
+                    border: 5px solid;
+                    border-image: url(../../assets/images/border.png);
+                    border-image-slice: 140 49%;
+                    border-image-width: 140px 150px;
+                    padding: 30px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    >.Lease-body-right-header {
+                        padding-left: 20px;
+                        margin-top: 20px;
+                        >.Lease-body-right-number{
+                            color: #fff;
+                            font-size: 34px;
+                            font-weight: 900;
+                            vertical-align: middle;
+                        }
+                        >.selectBg{}
+                    }
+
+                    >.Lease-body-right-list {
+                        flex: 1;
+                        height: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        .Lease-body-right-list-item {
+                            width: 336px;
+                            height: 195px;
+                            //border: 50px solid red;
+                            border-image-source: url(../../assets/images/playerinfo.png);
+                            border-image-slice: 49% fill;
+                            border-image-width: 60px;
+                            border-image-repeat: stretch;
+                            padding: 25px 50px;
+                            cursor: pointer;
+
+                            >.Lease-body-right-list-item-id {
+                                font-size: 30px;
+                                font-weight: 800;
+                                color: #514837;
+                            }
+                            >.Lease-body-right-list-item-num {
+                                font-size: 20px;
+                                font-weight: 800;
+                                color: #514837;
+                            }
+
+                            >.Lease-body-right-list-item-btn {
+                                display: flex;
+                                justify-content: space-between;
+                                margin-top: 10px;
+                                color: #fff;
+                                font-weight: 900;
+                                >.Lease-body-right-list-item-btn-l {
+                                    width: 121px;
+                                    height: 33px;
+                                    background: url("./images/btnBg.png") no-repeat;
+                                    background-size: 100% 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    >.Lease-body-right-pagination {
+                        >.CustomPagination {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

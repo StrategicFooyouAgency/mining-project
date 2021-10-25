@@ -1,0 +1,489 @@
+
+.Mountain-wrapper {
+    width: 100%;
+    min-height: 1700px;
+    background: url("../../assets/images/global-bg.png") no-repeat;
+    background-size: 100% 100%;
+    .Mountain {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        > .Mountain-top {
+            width: 100%;
+            height: 90px;
+            background: url("./images/Mountain-top.png") no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+
+            > .Mountain-top-text {
+                font-weight: 900;
+                color: #fff;
+                font-size: 30px;
+                margin-left: 68px;
+            }
+        }
+
+        > .Mountain-rewards {
+            width: 100%;
+            height: 493px;
+            background-color: #505FB2;
+            position: relative;
+
+            > .Mountain-rewards-border {
+                position: absolute;
+                top: -10px;
+                left: 0;
+                width: 100%;
+                height: 103%;
+                border: 80px solid transparent;
+                border-image: url("./images/Mountain-rewards-border.png") 130 round;
+            }
+
+            > .Mountain-rewards-body {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                padding: 20px 30px;
+
+                > .Mountain-rewards-body-top {
+                    display: flex;
+                    font-size: 26px;
+                    color: #fff;
+                    font-weight: 900;
+
+                    > .Mountain-rewards-body-top-2 {
+                        margin-left: 160px;
+                    }
+                }
+
+                > .Mountain-rewards-body-middle {
+                    width: 100%;
+                    height: 283px;
+                    //background-color: #404149;
+                    position: relative;
+
+                    > .Mountain-rewards-body-middle-border {
+                        width: 100%;
+                        height: 100%;
+                        border: 55px solid transparent;
+                        border-image: url("./images/bg1.png") 60 round;
+                    }
+
+                    > .Mountain-rewards-body-middle-contain {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 20px 30px 30px 30px;
+
+                        > .Mountain-rewards-data {
+                            width: 100%;
+                            height: 100%;
+                            background-color: #404149;
+
+                            > .Mountain-rewards-data-title {
+                                font-weight: 900;
+                                color: #fff;
+                                font-size: 18px;
+                            }
+
+                            > .Mountain-rewards-data-wrapper {
+                                display: flex;
+                                justify-content: space-around;
+
+                                > .Mountain-rewards-data-item {
+                                    width: 142px;
+                                    height: 188px;
+                                    background: url("./images/itemBg.png") no-repeat;
+                                    background-size: 100% 100%;
+                                    position: relative;
+
+                                    > .Mountain-rewards-data-item-closeIcon {
+                                        width: 41px;
+                                        height: 37px;
+                                        background: url("./images/close-icon.png") no-repeat;
+                                        background-size: 100% 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                    }
+
+                                    > .Mountain-rewards-data-item-btn {
+                                        width: 115px;
+                                        height: 37px;
+                                        background: url("./images/itemBgBtn.png") no-repeat;
+                                        background-size: 100% 100%;
+                                        position: absolute;
+                                        bottom: -30px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: #000;
+                                        font-weight: 900;
+                                        font-size: 16px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                > .Mountain-rewards-body-bottom {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
+
+                    > .Mountain-rewards-body-bottom1 {
+                        > .Mountain-rewards-body-bottom1-t {
+                            .MountainFormItem-body {
+                                width: 284px;
+                                height: 33px;
+                            }
+                        }
+
+                        > .Mountain-rewards-body-bottom1-b {
+                            .MountainFormItem-body {
+                                width: 284px;
+                                height: 33px;
+                            }
+                        }
+                    }
+
+                    > .Mountain-rewards-body-bottom2 {
+                        .MountainFormItem-body {
+                            width: 284px;
+                            height: 94px;
+
+                            .Mountain-rewards-body-bottom2-value {
+                            }
+                        }
+                    }
+
+
+                    > .Mountain-rewards-body-bottom3 {
+                        .MountainFormItem-body {
+                            width: 284px;
+                            height: 94px;
+                        }
+
+                        .Mountain-bottom3-left {
+                            width: 20%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                        }
+
+                        .Mountain-bottom3-right {
+                            width: 80%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+
+                            > .Mountain-bottom3-right-color {
+                                width: 26px;
+                                height: 26px;
+                                background: #D16D2A;
+                                border-radius: 50%;
+                                vertical-align: middle;
+                            }
+
+                            > .Mountain-bottom3-right-num {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+
+                    > .Mountain-rewards-body-bottom-btn {
+                        width: 141px;
+                        height: 95px;
+                        background: #A0B87E;
+                        border: 2px solid #5F9ECE;
+                        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #202F1B;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+        > .Mountain-Hatching {
+            height: 373px;
+
+            > .Mountain-Hatching-body {
+                font-size: 24px;
+                font-weight: bold;
+                color: #FFFFFF;
+
+                > .Mountain-Hatching-body-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+
+                    > .Mountain-Hatching-body-item {
+                        width: 182px;
+                        height: 245px;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        position: relative;
+                        cursor: pointer;
+
+                        > .Mountain-Hatching-body-item-dragon {
+                            width: 120px;
+                            height: 142px;
+                            background: url("./images/longdan.png") no-repeat;
+                            background-size: 100% 100%;
+                        }
+
+                        > .Mountain-Hatching-body-item-btn {
+                            width: 81px;
+                            height: 26px;
+                            line-height: 28px;
+                            background: #D16D2A;
+                            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                            border-radius: 5px;
+                            font-size: 16px;
+                            text-align: center;
+                        }
+
+                        > .Mountain-Hatching-body-item-ready {
+                            width: 88px;
+                            height: 63px;
+                            background: url("./images/Ready_.png") no-repeat;
+                            background-size: 100% 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transform: translate(-20%, -20%);
+                        }
+
+                        > .Mountain-Hatching-body-item-close {
+                            width: 41px;
+                            height: 37px;
+                            background: url("./images/close-icon.png") no-repeat;
+                            background-size: 100% 100%;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        > .Mountain-Breeding {
+            height: 472px;
+
+            > .Mountain-Breeding-body {
+                padding-top: 40px;
+                > .Mountain-Breeding-body-t {
+                    display: flex;
+                    justify-content: space-around;
+
+                    > .Mountain-Breeding-body-t-l {
+                        width: 228px;
+                        height: 285px;
+                        background: url("./images/itemBgYellowAdd.png") no-repeat;
+                        background-size: 100% 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        .Mountain-Breeding-body-t-l-dragon {
+                            width: 127px;
+                            height: 168px;
+                            background: url("./images/yellowLong.png") no-repeat;
+                            background-size: 100% 100%;
+                        }
+
+                        > .Mountain-Breeding-body-t-l-count {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: -20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #FFFFFF;
+                        }
+
+                        .Mountain-Breeding-body-t-l-ruby {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    > .Mountain-Breeding-body-t-m {
+                        position: relative;
+
+                        > .Mountain-rewards-body-middle-border {
+                            width: 366px;
+                            height: 273px;
+                            border: 55px solid transparent;
+                            border-image: url("./images/bg1.png") 60 round;
+                        }
+
+                        > .Mountain-Breeding-middle {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            padding: 20px 30px 40px 30px;
+
+                            > .Mountain-Breeding-middle-contain {
+                                width: 100%;
+                                height: 100%;
+                                background-color: #4C473F;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                > .Mountain-Breeding-middle-img {
+                                    width: 167px;
+                                    height: 183px;
+                                    background: url("./images/longdanHei.png") no-repeat;
+                                    background-size: 100% 100%;
+                                }
+
+                                > .Mountain-Breeding-middle-num {
+                                    display: flex;
+                                    justify-content: center;
+
+                                    > .Mountain-Breeding-middle-num-item {
+                                        margin-left: 5px;
+                                        > .Mountain-Breeding-middle-num-item-color {
+                                            width: 23px;
+                                            height: 23px;
+                                            border-radius: 50%;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                        }
+
+                                        > .Mountain-Breeding-middle-num-item-value {
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            color: #FFFFFF;
+                                            display: inline-block;
+                                            margin-left: 3px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    > .Mountain-Breeding-body-t-r {
+                        width: 228px;
+                        height: 285px;
+                        background: url("./images/itemBgYellowAdd.png") no-repeat;
+                        background-size: 100% 100%;
+                        position: relative;
+                        cursor: pointer;
+
+                        > .Mountain-Breeding-body-t-l-count {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: -20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #FFFFFF;
+                        }
+
+                        .Mountain-Breeding-body-t-l-ruby {
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            bottom: -20px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                > .Mountain-Breeding-body-b {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    >.Mountain-Breeding-body-b-expense {
+                        font-size: 16px;
+                        font-family: Microsoft YaHei;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                    }
+                    >.Mountain-Breeding-body-b-btn {
+                        width: 197px;
+                        height: 47px;
+                        line-height: 50px;
+                        background: #D16D2A;
+                        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                        border-radius: 5px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #000000;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.Mountain-tips {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    >.Mountain-tips-success {
+        width: 330px;
+        height: 149px;
+        background: url("./images/Success_.png") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 50px;
+
+    }
+    >.Mountain-tips-btn {
+        width: 208px;
+        height: 120px;
+        background: url("./images/yellowBtn.png") no-repeat;
+        background-size: 100% 100%;
+        font-size: 40px;
+        font-weight: 800;
+        color: #95560F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

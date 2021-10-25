@@ -1,6 +1,6 @@
 // 模块
 import React, { Component } from 'react'
-import { Layout, Menu } from 'antd';
+import { Layout, Menu,  Modal } from 'antd';
 import {Route,Switch,Redirect,Link} from 'react-router-dom'
 
 // 样式
@@ -54,7 +54,6 @@ export default class Mining extends Component {
                     </Layout>
                 </div>
             </div>
-             
         )
     }
 }

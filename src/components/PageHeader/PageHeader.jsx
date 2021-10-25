@@ -20,13 +20,13 @@ class PageHeader extends Component {
                         <Menu.Item key="activity">
                             <NavLink className="nav-item" to="/activity">STAKING</NavLink>
                         </Menu.Item>
-                        <Menu.Item key="marketpalce" disabled>
+                        <Menu.Item key="marketpalce">
                             <NavLink className="nav-item" to="/marketplace">MARKETPLACE</NavLink>
                         </Menu.Item>
                         <Menu.Item key="mountain">
                             <NavLink className="nav-item" to="/mountain">MOUNTAIN</NavLink>
                         </Menu.Item>
-                        <Menu.Item key="lease" disabled>
+                        <Menu.Item key="lease">
                             <NavLink className="nav-item" to="/lease">RentToEarn</NavLink>
                         </Menu.Item>
                         <Menu.Item key="game" disabled>

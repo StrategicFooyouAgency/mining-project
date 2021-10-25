@@ -1,0 +1,52 @@
+.CustomFilter {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-weight: 900;
+    font-size: 26px;
+    >.CustomFilter-top {
+
+    }
+    >.CustomFilter-body {
+        >.CustomFilter-body-item {
+            margin-top: 20px;
+            >.ant-checkbox-group {
+                display: flex;
+                flex-direction: column;
+                >.ant-checkbox-group-item {
+                    margin: 10px 0;
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 900;
+                    >.ant-checkbox {
+                        >.ant-checkbox-inner {
+                            background-color: #000;
+                            border-color: #8c8c8c;
+                        }
+                    }
+                }
+            }
+            >.ant-slider {
+                >.ant-slider-step {
+                    >.ant-slider-dot {
+                        background-color: #5C83CC!important;
+                    }
+                }
+
+                >.ant-slider-handle {
+                    background-color: #5C83CC;
+                }
+
+
+                >.ant-slider-mark {
+                    >.ant-slider-mark-text {
+                        font-size: 20px;
+                        color: #fff;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+
+    }
+}

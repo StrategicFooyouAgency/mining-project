@@ -1,0 +1,422 @@
+.DragonInfo {
+    width: 100%;
+    background-color: #E8DBB8;
+
+    > .DragonInfo-common {
+        > .DragonInfo-common-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+
+            > .DragonInfo-common-top-left {
+                font-size: 26px;
+                color: #804809;
+                font-weight: 900;
+
+                > .DragonInfo-common-top-left-t {
+                    margin-top: 10px;
+                }
+
+                > .DragonInfo-common-top-left-b {
+
+                }
+            }
+
+            > .DragonInfo-common-top-right {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 300px;
+                margin-left: 50px;
+
+                > .DragonInfo-common-top-right-item {
+                    width: 47%;
+                    height: 34px;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    color: #000;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        > .DragonInfo-common-image-wrapper {
+            display: flex;
+            justify-content: center;
+
+            > .DragonInfo-common-image {
+                margin-top: 30px;
+                width: 235px;
+                height: 253px;
+                background: url("./images/long.png") no-repeat;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+        }
+
+        > .DragonInfo-common-number {
+            display: flex;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 800;
+            color: #804809;
+
+            > .DragonInfo-common-r {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    > .DragonInfo-details {
+        display: flex;
+
+        > .DragonInfo-details-l {
+            width: 260px;
+            text-align: center;
+            padding-top: 20px;
+
+            > .DragonInfo-details-l-top {
+                color: #804809;
+                font-size: 20px;
+                font-weight: 900;
+            }
+
+            > .DragonInfo-details-l-image-wrapper {
+                margin-top: 20px;
+
+                > .DragonInfo-details-l-image {
+                    width: 235px;
+                    height: 313px;
+                    background: url("./images/long.png") no-repeat;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+            }
+
+            > .DragonInfo-details-l-level {
+                display: flex;
+                justify-content: center;
+
+                > .DragonInfo-level-sign {
+                    width: 130px;
+                    height: 35px;
+                    line-height: 35px;
+                    border-radius: 17px;
+                    color: #804809;
+                    font-size: 20px;
+                    font-weight: 900;
+                    border: 2px solid #D04E00;
+                    background: #FFD85E;;
+                }
+            }
+
+            > .DragonInfo-details-l-number {
+                display: flex;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: 800;
+                color: #804809;
+                margin: 20px 0;
+
+                > .DragonInfo-details-l-number-r {
+                    margin-left: 10px;
+                }
+            }
+
+            > .DragonInfo-details-l-btn {
+                display: flex;
+                justify-content: center;
+
+                > .DragonInfo-buy-btn {
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    width: 182px;
+                    height: 83px;
+                    line-height: 83px;
+                    background: url("./images/buy-btn.png") no-repeat;
+                    background-size: 100% 100%;
+                    font-size: 30px;
+                    font-weight: 900;
+                    color: #95560F;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > .DragonInfo-details-r {
+            flex: 1;
+            width: 0;
+            padding-right: 20px;
+
+            > .DragonInfo-details-r-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                > .DragonInfo-common-top-left {
+                    font-size: 26px;
+                    color: #804809;
+                    font-weight: 900;
+
+                    > .DragonInfo-common-top-left-t {
+                        margin-top: 10px;
+                    }
+
+                    > .DragonInfo-common-top-left-b {
+
+                    }
+                }
+
+                > .DragonInfo-common-top-right {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    width: 300px;
+                    margin-left: 50px;
+
+                    > .DragonInfo-common-top-right-item {
+                        width: 47%;
+                        height: 34px;
+                        background-repeat: no-repeat;
+                        background-size: 100% 100%;
+                        color: #000;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            > .DragonInfo-details-r-info {
+                margin-top: 20px;
+
+                > .DragonInfo-details-r-info-title {
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: #804809;
+                }
+
+                > .DragonInfo-details-r-info-body {
+                    width: 100%;
+                    height: 127px;
+                    background: url("./images/infoBg.png") no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    > .DragonInfo-details-r-info-body-item {
+                        text-align: center;
+                        color: #fff;
+                        font-weight: 900;
+                        font-size: 16px;
+
+                        > .info-body-item-num {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            > .DragonInfo-details-r-two {
+                display: flex;
+                justify-content: space-between;
+
+                > .DragonInfo-details-r-attr {
+                    width: 49%;
+
+                    .DragonInfo-details-r-attr-title {
+                        font-size: 20px;
+                        font-weight: 800;
+                        color: #804809;
+                    }
+
+                    .DragonInfo-details-r-attr-image {
+                        width: 100%;
+                        height: 157px;
+                        background: url("./images/infoBg.png") no-repeat;
+                        background-size: 100% 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        .DragonInfo-details-attr-item {
+                            width: 84px;
+                            height: 32px;
+                            line-height: 34px;
+                            text-align: center;
+                            color: #fff;
+                            font-weight: 900;
+                            font-size: 16px;
+                            margin-bottom: 5px;
+
+                            &.DragonInfo-details-attr-item-active-red {
+                                background: #FF0000;
+                                border: 1px solid #000000;
+                                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+                                border-radius: 5px;
+                            }
+
+                            &.DragonInfo-details-attr-item-active-dark {
+                                background: #7B0499;
+                                border: 1px solid #000000;
+                                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+                                border-radius: 5px;
+                            }
+                        }
+
+                    }
+                }
+
+                > .DragonInfo-details-r-skill {
+                    width: 49%;
+
+                    > .DragonInfo-details-r-skill-title {
+                        font-size: 20px;
+                        font-weight: 800;
+                        color: #804809;
+                    }
+
+                    > .DragonInfo-details-r-skill-image {
+                        width: 100%;
+                        height: 157px;
+                        background: url("./images/infoBg.png") no-repeat;
+                        background-size: 100% 100%;
+                        display: flex;
+                        //justify-content: center;
+                        align-items: center;
+                        padding-left: 20px;
+
+                        > .DragonInfo-details-skill-img {
+                            width: 70px;
+                            height: 70px;
+                            background: url("./images/skill.png") no-repeat;
+                            background-size: 100% 100%;
+                        }
+
+                        > .DragonInfo-details-skill-text {
+                            flex: 1;
+                            width: 0;
+                            padding-left: 10px;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+
+            > .DragonInfo-details-r-parts {
+                font-size: 16px;
+                font-weight: 800;
+                color: #fff;
+
+                > .DragonInfo-details-r-parts-title {
+                    font-size: 20px;
+                    font-weight: 800;
+                    color: #804809;
+
+                }
+
+                > .DragonInfo-details-r-parts-image {
+                    width: 100%;
+                    height: 127px;
+                    background: url("./images/infoBg.png") no-repeat;
+                    background-size: 100% 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 0 10px;
+
+                    > .DragonInfo-parts-item {
+                        width: 75px;
+                        height: 62px;
+                        background: url("./images/partsBg.png") no-repeat;
+                        background-size: 100% 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 900;
+                    }
+
+                    > .DragonInfo-parts-item-split {
+                        width: 24px;
+                        height: 3px;
+                        background: #A6A6A6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.DragonInfo-tips-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .DragonInfo-tips-success-top {
+        font-size: 35px;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+
+    > .DragonInfo-tips-success-middle {
+        margin: 70px 0;
+        width: 131px;
+        height: 115px;
+        background: url("./images/jiazai.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    > .DragonInfo-tips-success-bottom {
+        font-size: 35px;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+}
+
+.DragonInfo-tips-fail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > .DragonInfo-tips-fail-top {
+        font-size: 35px;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+
+    > .DragonInfo-tips-fail-middle {
+        margin: 70px 0;
+        width: 141px;
+        height: 124px;
+        background: url("./images/failTips.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    > .DragonInfo-tips-fail-btn {
+        width: 182px;
+        height: 105px;
+        background: url("./images/yellowBtn.png") no-repeat;
+        background-size: 100% 100%;
+        font-size: 35px;
+        font-weight: 800;
+        color: #95560F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.DragInfo-modal.ant-modal {
+      .ant-modal-content {
+
+      }
+}

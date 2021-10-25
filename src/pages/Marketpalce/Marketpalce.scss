@@ -1,617 +1,165 @@
-#marketpalce {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	width: auto;
-	background: #FFFFFF;
-	width: 1400px;
-    .ant-tabs-nav {
-        margin: 0;
-		
-        &::before {
-            border-bottom: none;
+.Market-wrapper {
+    width: 100%;
+    min-height: 1700px;
+    background: url("../../assets/images/global-bg.png") no-repeat;
+    background-size: 100% 100%;
+    >.Market {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #424242;
+
+        > .Market-timeTab {
+            width: 100%;
+            height: 122px;
+            background: url("./images/timeTab.png") no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
         }
-        .ant-tabs-tab {
-            line-height: 42px;
-            height: 43px;
-            padding:0 40px;
-            color: #313131 ;
-			border-radius:20px;
-			font-size: 15px;
-			
-			// width: 121px;
-            &.ant-tabs-tab-active {
-                background: #178CE0;
-                .ant-tabs-tab-btn {
-                    
-                    color: #fff;
-    
-                }
-            }
-        }
-        .ant-tabs-ink-bar {
-            
-            background: #61C65F;
-			display: none;
-        }
-		.ant-tabs-nav-list
-		{
-			background: #D1E1ED;
-			border-radius:30px;
-		}
-        
-    }
-	
-    .ant-tabs-content-holder {
-        // padding: 40px 90px;
-        .saleNum {
-			// padding: 40px 90px;
-			.changeFf{
-				display: flex;
-				margin-left: 100px;
-				margin-top: 50px;
-				margin-bottom: 64px;
-			}
-			.titleCenter{
-				display: list-item;
-				width: auto;
-				text-align: center;
-				font-size: 15px;
-				color: #313131;
-				margin: 0 60px;
-				// margin-left: auto;
-				// margin-right: auto;
-			}
-			.redRound{
-				background: #D9565B;
-				width:51px;
-				height: 51px;
-				border-radius: 50%;
-				// float: left;
-				display: inline-block;
-				vertical-align: middle;
-			}
-			.blueRound{
-				background: #94A8DB;
-			}
-			.yellowRound{
-				background: #F4B184;
-			}
-			.changeNum{
-				font-size: 50px;
-				display: inline-block;
-				vertical-align: middle;
-				margin-left: 8px;
-				font-weight: 900;
-			}
-            header {
-				margin-left: 320px;
-                height: 60px;
+
+        > .Market-timeTabBody {
+            width: 100%;
+            height: 289px;
+            border: 80px solid;
+            border-image: url("./images/border1.png") 150 repeat;
+            background-size: 100% 100%;
+            background-color: #505FB2;
+
+            > .Market-timeTabBody-wrapper {
+                width: 100%;
+                height: 100%;
                 display: flex;
-                justify-content: space-between;
-                .header-title {
+                justify-content: space-around;
+                align-items: center;
+
+                > .Market-timeTabBody-item {
                     display: flex;
                     align-items: center;
-                    h2 {
-                        margin: 0;
-                        font-size: 40px;
-                        line-height: 60px;
+
+                    > .Market-timeTabBody-item-left {
+                        width: 56px;
+                        height: 56px;
+                        border-radius: 50%;
+                    }
+
+                    > .Market-timeTabBody-item-right {
                         color: #fff;
-                        font-weight: 700;
-                    }
-                    .ant-select {
-                        // margin-left: 40px;
-						// text-align: right;
-                    }
-                }
-                .header-select {
-                    display: flex;
-                    align-items: center;
-                    .ant-select:first-of-type {
-                        margin-right: 16px;
-                    }
-                }
-                .ant-select {
-                    width: 115px;
-                    height: 36px;
-                    background: #191919;
-                    border: 1px solid #404040;
-                    .ant-select-selector {
-                        background: #191919;
-                        color: #fff;
+                        font-size: 26px;
+                        font-weight: 900;
+                        margin-left: 10px;
                     }
                 }
             }
-			
-            .dragon-list {
-				
+
+        }
+
+        > .Market-bottom {
+            width: 100%;
+            height: 1176px;
+            position: relative;
+
+            > .Market-bottom-topBg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 122px;
+                background: url("./images/timeTab.png") no-repeat;
+                background-size: 100% 100%;
+                padding: 21px 84px 0;
+            }
+
+            > .Market-bottom-body {
+                width: 100%;
+                height: 1176px;
+                background: url("./images/timeTabBody.png") no-repeat;
+                background-size: 100% 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 21px 64px 0;
                 display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                li {
-                    width: 165px;
-                    height: 220px;
-                    background: #3D3D3D;
+                flex-direction: column;
+
+                > .Market-bottom-body-top {
+                    width: 100%;
+                    //height: 100%;
+                }
+
+                > .Market-bottom-body-bottom {
+                    width: 100%;
+                    flex: 1;
+                    height: 0;
+                    padding-top: 34px;
+                    padding-bottom: 50px;
                     display: flex;
-                    margin:15px 7px;
-                    span {
-                        text-align: center;
-                        margin: auto;
-                        font-size: 20px;
-                        color: #fff;
+
+                    > .Market-body-left {
+                        width: 180px;
+                        height: 100%;
+                    }
+
+                    > .Market-body-right {
+                        flex: 1;
+                        width: 0;
+                        height: 100%;
+                        margin-left: 10px;
+                        border: 10px solid;
+                        border-image-source: url("./images/yello-border.png");
+                        border-image-slice: 40% fill;
+                        border-image-repeat: stretch;
+                        border-image-width: 50px;
+                        //background: url("./images/yello-border.png") no-repeat;
+                        //background-size: 100% 100%;
+                        padding: 0 20px;
+                        //display: flex;
+                        //flex-direction: column;
+                        > .Market-body-right-title {
+                            display: flex;
+                            align-items: center;
+
+                            > .Market-body-right-number {
+                                color: #fff;
+                                font-size: 44px;
+                                font-weight: 900;
+                                vertical-align: middle;
+                            }
+                        }
+
+                        > .Market-dragon-list {
+                            height: 860px;
+                            width: 100%;
+                            //display: flex;
+                            //justify-content: space-between;
+                            //flex-wrap: wrap;
+                            > .Market-dragon-list-item {
+                                float: left;
+                                width: 20%;
+                                height: 209px;
+                                background: url("./images/listItemBg.png") no-repeat;
+                                background-size: 100% 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+
+                                > .dragon-bg {
+                                    width: 106px;
+                                    height: 142px;
+                                    background: url("./images/long.png") no-repeat;
+                                    background-size: 100% 100%;
+                                }
+                            }
+                        }
+
+                        > .Market-dragon-pagination {
+                            > .CustomPagination {
+                                justify-content: center;
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
-.ant-slider-handle{
-			background: #5AC7FF!important
-		}
-.cholf{
-	display: flex;
-	// margin-top: -60px;
-					// padding:0 0;
-		}
-.chocn{
-	width: 250px;
-	// height: auto;
-	// background: #3D3D3D;
-		}
-.cholist{
-		margin: 60px 60px 0;
-		}
-
-				
-    // 我的龙列表
-
-    // 分页
-    .page {
-        margin-bottom: 36px;
-        height: 26px;
-        line-height: 26px;
-        display: flex;
-        justify-content: center;
-        .page-btn {
-            width: 38px;
-            // height: auto;
-            background: rgba(224, 224, 224, 0);
-            border: 1px solid #E0E0E0;
-        }
-        .current {
-            margin-left: 22px;
-            width: 38px;
-            text-align: center;
-            color: #fff;
-            background: rgba(224, 224, 224, 0);
-            border: 1px solid #E0E0E0;
-        }
-        .total-page {
-            margin-left: 6px;
-            margin-right: 22px;
-            color: #808080;
-        }
-        
-    }
-
-.filter-textlf{
-	display:inline;
-	font-size: 20px;
-	margin-top: 42px;
-	margin-left: 30px;
-	color: #313131;
-	font-weight: bold;
-}
-.btnlf{
-	text-align: center;
-	display:inline;
-	font-size: 15px;
-	color: #313131;
-	margin-top: 45px;
-	margin-left: 12px;
-}	
-.txt-le{
-	font-size: 13px;
-	color: #313131;
-	margin-top: 15px;
-	margin-left: 20px;
-	font-weight: bold;
-	.ant-checkbox-inner{
-		width: 22px;
-		height: 22px;
-		border: 2px solid #B7DAEC;
-		border-radius: 5px;
-	}
-}
-.checkbox-le{
-	margin-top: 0;
-	margin-bottom: 15px;
-	font-size: 18px;
-	color: #313131;
-	font-weight: 400;
-	
-}
-.header-title {
-                    display: flex;
-                    align-items: center;
-                    h2 {
-                        margin: 0;
-                        font-size: 40px;
-                        line-height: 60px;
-                        color: #313131;
-                        font-weight: 700;
-                    }
-                    .ant-select {
-						margin-left: 742px;
-                    }
-					
-                }
-.ant-list-pagination{
-						text-align: center;
-					}
-                // .header-select {
-                //     display: flex;
-                //     align-items: center;
-                //     .ant-select:first-of-type {
-                //         margin-right: 16px;
-                //     }
-                // }
-.topBackg{
-	background: linear-gradient(#D1E1ED , #fff );
-	height: 258px;
-}
-.allBackg{
-	background:#fff;
-	height: 100%;
-}
-.rightDragon{
-	margin-left: 132px;
-	margin-top: 49px;
-}
-#drgonCard{
-	.ant-card-head-title{
-		margin-top: 14px;
-		margin-left: 18px;
-		font-size: 14px;
-		font-family: Lato;
-		font-weight: 400;
-		color: #000000;
-		// margin-bottom: 49px;
-		padding: 0;
-		// flex: 0 0 auto;
-	}
-	.ant-card-head {
-		padding: 0;
-		// height: 60px;
-		border-bottom:0;
-	}
-	.ant-card-head-wrapper
-	{
-		align-items: flex-start;
-	}
-	.ant-card-extra{
-		padding: 0;
-	}
-	.ant-card-bordered{
-		.ant-card-cover{
-			width: 207px;
-			height: 199px;
-			margin-top: 10px;
-		}
-	}
-	
-	.cardCover{
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
-}
-.ant-modal-content {
-			    border-radius: 10px;
-				border: 1px solid #E0E0E0!important
-				
-		}
-.ant-modal-close {
-	border-radius: 50%;
-	margin-top: 15px;
-	margin-right: 15px;
-	background:#178CE0;
-	
-	// width: 42px;
-	// height: 42px;
-	.ant-modal-close-x {
-		width: 42px;
-		height: 42px;
-		font-size: 32px;
-		font-weight: 900;
-		line-height: 40px!important
-	}
-}
-.ant-modal-close{
-		color: #FFFFFF;
-		width: 42px;
-		height: 42px;
-		font-weight: 900!important
-	}
-	.ant-modal-close:hover{
-			color: #90AADB!important
-			// width: 42px;
-			// height: 42px;
-			// font-weight: 900;
-		}
-.ant-card-bordered{
-		border: 2px solid #5AC7FF!important
-	}
-	.ant-card{
-		border-radius: 10px;
-		background: #F1FAFF!important
-	}
-.qualit{
-	width: 110px;
-	height:70px ;
-	margin-top: 18px;
-	// margin-bottom: 26px;
-	.qualitStyle{
-		width: 49px;
-		height: 17px;
-		border-radius: 20px;
-		float: left;
-		margin-bottom: 3px;
-		margin-right: 4px;
-		
-	}
-	.qualitRed{
-		background:#D9575A;
-	}
-	.qualitGreem{
-		background:#A8D08D;
-	}
-	.qualitBlue{
-		background:#90AADB;
-	}
-	.qualitYellow{
-		background:#FEC000;
-	}
-}
-.cardFootLeft{
-	float: left;
-	font-size: 20px;
-	font-weight: 900;
-	color: #313131;
-}
-.cardFootRight{
-	float: right;
-	font-size: 12px;
-	color: #313131;
-	margin-top: 8px;
-	font-weight: 600;
-	// margin-right: 0px;
-}
-.modalImg{
-	width: 344px;
-	height: 333px;
-}
-.modalFlex{
-	display: flex;
-}
-.modalLeft{
-	width: 465px;
-	margin-left: 80px;
-	margin-top: 60px;
-}
-.modalHashPower{
-	// width: 139px;
-	// height: 15px;
-	font-size: 18px;
-	font-family: Lato;
-	font-weight: bold;
-	color: #313131;
-	margin-bottom: 60px;
-	margin-left: 10px;
-}
-.modalLvStyle{
-	// width: 88px;
-	// height: 27px;
-	margin-top: 27px;
-	margin-left: 112px;
-	margin-bottom: 17px;
-	font-size: 34px;
-	font-weight: 900;
-	color: #313131;
-}
-.modalFootStyle{
-	margin-left: 55px;
-	width: 187px;
-	height:32px;
-}
-.modalBuyBtn{
-	margin-top: 15px;
-	margin-left: 60px;
-	.ant-btn{
-		background: #F2B700;
-		width: 193px;
-		height: 56px;
-		border-radius: 30px;
-		font-size: 30px;
-		font-weight: 900;
-		color: #FFFFFF;
-	}
-}
-.modalRight{
-	width: 740px;
-	// margin-left: 80px;
-	margin-top: 60px;
-	
-}
-.modalRightNum{
-	width: 274px;
-	height: 24px;
-	font-size: 30px;
-	font-weight: 900;
-	color: #525454;
-	
-	// display: inline-block;
-	float: left;
-	vertical-align: middle;
-}
-.modalCardQualit{
-	// margin-left: 60px;
-	float: right;
-	margin-right: 100px;
-	margin-top: -10px;
-}
-.breedCount{
-	font-size: 18px;
-	font-weight: bold;
-	color: #313131;
-	clear: both;
-	// margin-top: 23px;
-	// padding-top: 0px;
-}
-.inforMation{
-	font-size: 18px;
-	font-weight: bold;
-	color: #313131;
-	clear: both;
-	margin-top: 46px;
-}
-.propStyle{
-	display: flex;
-	margin-top: 28px;
-	border: 1px solid #E0E0E0;
-	border-radius: 10px;
-	width: 606px;
-	height: 108px;
-	padding-top: 15px;
-}
-.hpMargin{
-	margin-left: 45px;
-	margin-right: 45px;
-}
-.hpStyle{
-	font-size: 16px;
-	font-weight: bold;
-	color: #313131;
-	text-align: center;
-}
-.hpNum{
-	font-size: 20px;
-	font-weight: bold;
-	color: #313131;
-	margin-top: 20px;
-}
-.attribute{
-	font-size: 18px;
-	font-family: Lato;
-	font-weight: bold;
-	color: #313131;
-	margin-top: 33px;
-	height: auto;
-	display: inline-block;
-}
-.attributeCon{
-	// width: 268px;
-	// height: 118px;
-	float: left;
-	font-size: 18px;
-	font-family: Lato;
-	font-weight: bold;
-	color: #313131;
-}
-.attributeConRight{
-	margin-left: 90px;
-}
-
-.attributeFlex{
-	// display: flex;
-	width: 258px;
-	height: 108px;
-	border: 1px solid #E0E0E0;
-	border-radius: 10px;
-}
-.attributeProp{
-	margin-left: 8px;
-	float: left;
-	width: 70px;
-	height: 23px;
-	margin-top: 10px;
-	text-align: center;
-}
-.attributePropSec{
-	margin-left: 8px;
-	float: left;
-	width: 70px;
-	height: 23px;
-	margin-top: 30px;
-	text-align: center;
-}
-.attributeSillImg{
-	width: 70px;
-	height: 70px;
-	margin-top: 19px;
-	margin-left: 10px;
-}
-.attributeSillFlex{
-	display: flex;
-	
-}
-.attributeSillText{
-	// vertical-align:text-top;
-	margin-top: 13px;
-	font-size: 15px;
-	line-height: 17px;
-	margin-left: 9px;
-}
-.bodyPartsStyle{
-	margin-top: 10px;
-	clear: both;
-	font-size: 18px;
-	font-weight: bold;
-	color: #313131;
-}
-.bodyPartsCon{
-	width: 606px;
-	height: 108px;
-	border: 1px solid #E0E0E0;
-	border-radius: 10px;
-	margin-top: 11px;
-	display: flex;
-	justify-content:space-between;
-	margin-bottom: 60px;
-}
-.hormicon{
-	background: #38BDE9;
-	height: 58px;
-	width: 58px;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 14px;
-	font-weight: 400;
-	color: #FFFFFF;
-	padding: 11px;
-	line-height: 18px;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 23px;
-	margin-right: 53px;
-	display: flex;
-	// float: left;
-}
-.hormiconText{
-	width: 36px;
-	height: 36px;
-	font-size: 14px;
-	font-weight: 400;
-	color: #FFFFFF;
-}
-.hormiconTextRight{
-	margin-left: 20px;
-	font-size: 14px;
-	font-weight: 400;
-	color: #313131;
-}
-
-

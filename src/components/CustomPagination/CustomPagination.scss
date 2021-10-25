@@ -1,0 +1,49 @@
+.CustomPagination {
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    >.CustomPagination-left-arrow {
+        width: 62px;
+        height: 28px;
+        background: #95A1B8;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        >.left-arrow {
+            width: 30px;
+            height: 15px;
+            background: url("./images/arrow-left.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    >.CustomPagination-page {
+        width: 62px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        background: #2251A8;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+    >.CustomPagination-right-arrow {
+        width: 62px;
+        height: 28px;
+        background: #95A1B8;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        >.right-arrow {
+            width: 30px;
+            height: 15px;
+            background: url("./images/arrow-right.png") no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}

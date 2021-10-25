@@ -5,7 +5,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import './util/tool.jsx';
 // 样式
 import './App.css';
-
+import './global.scss'
 // 组件
 import PageHeader from "./components/PageHeader/PageHeader";
 

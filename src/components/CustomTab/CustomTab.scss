@@ -1,0 +1,23 @@
+.CustomTab {
+    >.CustomTab-header {
+        display: flex;
+        >.CustomTab-header-item {
+            width: 173px;
+            height: 80px;
+            line-height: 70px;
+            text-align: center;
+            background-size: 100% 100%;
+            transition: all .3s;
+            cursor: pointer;
+            font-size: 26px;
+            font-weight: 900;
+            color: #4C4434;
+            background: url("./images/tab.png") no-repeat;
+            background-size: 100% 100%;
+            &.CustomTab-header-item-active {
+                background: url("./images/tab-acive.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
