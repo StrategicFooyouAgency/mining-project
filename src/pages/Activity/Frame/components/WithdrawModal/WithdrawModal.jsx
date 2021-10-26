@@ -17,6 +17,9 @@ function WithdrawModal(props) {
                 </div>
                 <button className={'max-btn'}>Max</button>
             </div>
+            <div className={'black-cal'}>
+
+            </div>
          </div>
       </div>
   );
