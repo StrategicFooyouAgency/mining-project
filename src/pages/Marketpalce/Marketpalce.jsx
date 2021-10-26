@@ -290,16 +290,16 @@ const Marketpalce = () => {
                     </div>
                 </div>
                 <Modal
+                    title=' '
                     visible={dragonModal.visible}
                     destroyOnClose={true}
-                    width='916px'
+                    width='45vw'
                     onCancel={() => {
                         setDragonModal(state => ({...state, visible: false}))
                     }}
                     footer={null}
                     maskClosable={false}
                     className='CustomDialog'
-                    style={{height: '912px'}}
                 >
                     <DragonInfo />
                 </Modal>

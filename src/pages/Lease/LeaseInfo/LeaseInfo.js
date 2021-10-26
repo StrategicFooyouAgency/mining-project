@@ -118,7 +118,7 @@ const LeaseInfo = props => {
                         <div className="rent-middle">
                             <Form layout='vertical'>
                                 <FormItem label='Tenant Password' name='password'>
-                                    <Input.Password visibilityToggle={false} style={{width: '500px'}}/>
+                                    <Input.Password value='2736817263817587135827' visibilityToggle={false} style={{width: '500px'}}/>
                                 </FormItem>
                             </Form>
 
@@ -204,6 +204,7 @@ const LeaseInfo = props => {
             </div>
 
             <Modal
+                title=' '
                 visible={modelProps.visible}
                 destroyOnClose={true}
                 footer={null}
@@ -211,8 +212,7 @@ const LeaseInfo = props => {
                     setModalProps(state => ({...state, visible: false}))
                 }}
                 className={modelProps.class}
-                width={916}
-                style={{height: '812px'}}
+                width='47vw'
                 maskClosable={false}
             >
                 {renderModalContent()}

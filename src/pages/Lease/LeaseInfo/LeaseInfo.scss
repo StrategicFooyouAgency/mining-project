@@ -1,33 +1,34 @@
 
 .LeaseInfo-wrapper {
+    position: relative;
     .LeaseInfo {
         width: 100%;
         background-color: #E8DBB8;
         display: flex;
-        padding-top: 20px;
+        padding-top: 1.042vw;
 
         > .LeaseInfo-title {
             color: #fff;
             font-weight: 900;
-            font-size: 35px;
+            font-size: 1.823vw  /* 35/19.2 */;
             position: absolute;
-            top: -100px;
+            top: -4.84375vw  /* -93/19.2 */;
             left: 50%;
             transform: translateX(-50%);
         }
 
         > .LeaseInfo-l {
-            width: 330px;
+            width: 17.1875vw  /* 330/19.2 */;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             > .LeaseInfo-l-id {
-                width: 178px;
-                height: 67px;
-                line-height: 67px;
+                width: 9.271vw  /* 178/19.2 */;
+                height: 3.49vw  /* 67/19.2 */;
+                line-height: 3.89vw  /* 67/19.2 */;
                 text-align: center;
-                font-size: 26px;
+                font-size: 1.354vw  /* 26/19.2 */;
                 color: #fff;
                 font-weight: 900;
                 background-color: #676F96;
@@ -36,7 +37,7 @@
             }
 
             > .LeaseInfo-l-text1 {
-                font-size: 26px;
+                font-size: 1.354vw  /* 26/19.2 */;
                 font-weight: 800;
                 color: #2251A8;
                 margin-top: 40px;
@@ -47,7 +48,7 @@
             flex: 1;
             width: 0;
             border-left: 3px solid #95560F;
-            padding: 0 20px;
+            padding: 0 1.042vw;
 
             > .LeaseInfo-r-t {
                 display: flex;
@@ -59,13 +60,13 @@
                     flex-direction: column;
 
                     > .LeaseInfo-r-t-l-text {
-                        font-size: 22px;
+                        font-size: 1.146vw  /* 22/19.2 */;
                         color: #95560F;
                         font-weight: 900;
                     }
 
                     > .LeaseInfo-r-t-l-text0 {
-                        font-size: 30px;
+                        font-size: 1.5625vw  /* 30/19.2 */;
                         color: #95560F;
                         font-weight: 900;
                     }
@@ -74,11 +75,11 @@
 
                 > .LeaseInfo-r-t-r {
                     > .LeaseInfo-r-t-r-btn {
-                        width: 307px;
+                        width: 15.99vw  /* 307/19.2 */;
                         //height: 67px;
                         //line-height: 67px;
                         text-align: center;
-                        font-size: 26px;
+                        font-size: 1.146vw  /* 22/19.2 */;
                         color: #fff;
                         font-weight: 900;
                         background-color: #676F96;
@@ -91,7 +92,7 @@
             }
 
             > .LeaseInfo-r-b {
-                font-size: 26px;
+                font-size: 1.354vw  /* 26/19.2 */;
                 color: #95560F;
                 font-weight: 900;
             }
@@ -99,12 +100,11 @@
     }
 
     > .LeaseInfo-rent {
-        width: 260px;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
+        width: 11.542vw  /* 260/19.2 */;
+        height: 6.8125vw  /* 150/19.2 */;
+        line-height: 6.4125vw  /* 150/19.2 */;
+        text-align: center;
+        font-size: 2.083vw  /* 40/19.2 */;
         font-weight: 800;
         color: #95560F;
         background: url("../images/rentBg.png") no-repeat;
@@ -115,7 +115,7 @@
         //left: 50%;
         //transform: translateX(-50%);
         margin: 0 auto;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
 }
@@ -126,21 +126,22 @@
     background-color: #E8DBB8;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 0;
+    padding: 1.042vw 0;
+    margin-bottom: 3.125vw  /* 60/19.2 */;
 
     > .Dragon-Information-title {
         color: #fff;
         font-weight: 900;
-        font-size: 35px;
+        font-size: 1.823vw  /* 35/19.2 */;
         position: absolute;
-        top: -17%;
+        top: 1.802vw  /* 25/19.2 */;
         left: 50%;
         transform: translateX(-50%);
     }
 
     > .Dragon-Information-item {
         width: calc(100% / 6);
-        height: 181px;
+        height: 9.427vw  /* 181/19.2 */;
         background: url("../images/listItemBg.png") no-repeat;
         background-size: 100% 100%;
         display: flex;
@@ -148,8 +149,8 @@
         align-items: center;
 
         > .Dragon-Information-item-dragon {
-            width: 92px;
-            height: 123px;
+            width: 4.792vw  /* 92/19.2 */;
+            height: 6.40625vw  /* 123/19.2 */;
             background: url("../../../assets/images/dragon.png") no-repeat;
             background-size: 100% 100%;
         }
@@ -162,21 +163,21 @@
     display: flex;
     //justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px 0;
-
+    padding: 1.042vw 0;
+    margin-bottom: 3.125vw  /* 60/19.2 */;
     > .Build-Information-title {
         color: #fff;
         font-weight: 900;
-        font-size: 35px;
+        font-size: 1.823vw  /* 35/19.2 */;
         position: absolute;
-        top: -17%;
+        top: 1.802vw  /* 25/19.2 */;
         left: 50%;
         transform: translateX(-50%);
     }
 
     > .Build-Information-item {
         width: calc(100% / 6);
-        height: 181px;
+        height: 9.427vw  /* 181/19.2 */;
         background: url("../images/listItemBg.png") no-repeat;
         background-size: 100% 100%;
         display: flex;
@@ -184,8 +185,8 @@
         align-items: center;
 
         > .Build-Information-item-dragon {
-            width: 92px;
-            height: 123px;
+            width: 4.792vw  /* 92/19.2 */;
+            height: 6.40625vw  /* 123/19.2 */;
             background: url("../../../assets/images/dragon.png") no-repeat;
             background-size: 100% 100%;
         }
@@ -194,21 +195,24 @@
 }
 
 .Island-Information {
+    //margin: 2.083vw  /* 40/19.2 */ 0;
+    padding: 0 60px;
+    margin-bottom: 2.083vw;
     > .Island-Information-title {
         font-weight: 900;
-        font-size: 35px;
+        font-size: 1.823vw  /* 35/19.2 */;
         //position: absolute;
         //top: 0;
         //left: 50%;
         //transform: translateX(-50%);
         text-align: center;
         color: #95560F;
-        margin-bottom: 60px;
+        margin-bottom: 3.125vw  /* 60/19.2 */;
     }
 
     .Island-Information-item {
-        width: 252px;
-        height: 315px;
+        width: 13.125vw  /* 252/19.2 */;
+        height: 16.40625vw  /* 315/19.2 */;
         background: url("../images/listItemBg.png") no-repeat;
         background-size: 100% 100%;
         >.Island-Information-lock {
@@ -219,12 +223,25 @@
             justify-content: center;
             align-items: center;
             >.Island-Information-lock-icon {
-                width: 68px;
-                height: 78px;
+                width: 3.542vw  /* 68/19.2 */;
+                height: 4.0625vw  /* 78/19.2 */;
                 background: url("../images/lock.png") no-repeat;
                 background-size: 100% 100%;
             }
         }
+    }
+
+
+    .ant-carousel .slick-prev, .ant-carousel .slick-prev:hover{
+        left: -3.604vw  /* -50/19.2 */;
+        font-size: 2.96875vw  /* 57/19.2 */;
+        color: #EBCD3C;
+    }
+
+    .ant-carousel .slick-next, .ant-carousel .slick-next:hover{
+        right: -3.604vw  /* -50/19.2 */;
+        font-size: 2.96875vw  /* 57/19.2 */;
+        color: #EBCD3C;
     }
 }
 
@@ -235,28 +252,28 @@
     > .rent-top {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 2.083vw  /* 40/19.2 */;
 
         > .rent-top-l {
-            width: 336px;
-            height: 201px;
+            width: 17.5vw  /* 336/19.2 */;
+            height: 10.46875vw  /* 201/19.2 */;
             border-image-source: url(../../../assets/images/playerinfo.png);
             border-image-slice: 49% fill;
-            border-image-width: 45px;
+            border-image-width: 2.34375vw  /* 45/19.2 */;
             border-image-repeat: stretch;
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding: 20px 40px;
+            padding: 1.042vw  /* 20/19.2 */ 2.083vw  /* 40/19.2 */;
 
             > .rent-top-title {
-                font-size: 30px;
+                font-size: 1.5625vw  /* 30/19.2 */;
                 font-weight: 800;
                 color: #514837;
             }
 
             > .rent-top-text {
-                font-size: 26px;
+                font-size: 1.354vw  /* 26/19.2 */;
                 font-weight: 800;
                 color: #514837;
             }
@@ -264,13 +281,13 @@
         }
 
         > .rent-top-r {
-            font-size: 30px;
+            font-size: 1.5625vw  /* 30/19.2 */;
             font-weight: 800;
             color: #95560F;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            margin-left: 30px;
+            margin-left: 1.5625vw  /* 30/19.2 */;
 
             > div:first-child {
                 padding-left: 20px;
@@ -278,13 +295,13 @@
 
             .rent-top-r-feeBtn {
                 display: inline-block;
-                width: 115px;
-                height: 54px;
-                line-height: 58px;
+                width: 5.99vw  /* 115/19.2 */;
+                height: 2.8125vw  /* 54/19.2 */;
+                line-height: 3.021vw  /* 58/19.2 */;
                 background: #676F96;
                 box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
                 border-radius: 5px;
-                font-size: 30px;
+                font-size: 1.5625vw  /* 30/19.2 */;
                 color: #fff;
                 font-weight: 800;
                 text-align: center;
@@ -296,13 +313,13 @@
     > .rent-middle {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 2.083vw  /* 40/19.2 */;
 
         > .ant-form.ant-form-vertical {
             > .ant-form-item {
                 >.ant-form-item-label {
                     >label {
-                        font-size: 30px;
+                        font-size: 1.5625vw  /* 30/19.2 */;
                         font-weight: 800;
                         color: #95560F;
                     }
@@ -313,9 +330,16 @@
                             >.ant-input-password{
                                 color: #fff;
                                 background: #676F96;
-                                >.ant-input {
+                                &.ant-input {
                                     color: #fff;
                                     background: #676F96;
+                                    height: 3vw  /* 67/19.2 */;
+                                    line-height: 3vw;
+                                    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                                    border-radius: 5px;
+                                    border: none;
+                                    text-align: center;
+                                    font-size: 1.5625vw  /* 30/19.2 */;
                                 }
                             }
                         }
@@ -328,34 +352,31 @@
     > .rent-bottom {
         display: flex;
         justify-content: space-around;
-        margin-top: 40px;
+        margin-top: 2.083vw  /* 40/19.2 */;
 
         > .rent-bottom-rent {
-            width: 260px;
-            height: 150px;
+            width: 11.542vw  /* 260/19.2 */;
+            height: 6.8125vw  /* 150/19.2 */;
+            line-height: 6.4125vw  /* 150/19.2 */;
+            text-align: center;
             background: url("../images/rentBtn.png") no-repeat;
             background-size: 100% 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
+            font-size: 2.083vw  /* 40/19.2 */;
             font-weight: 800;
             color: #95560F;
             cursor: pointer;
         }
 
         > .rent-bottom-cancel {
-            width: 260px;
-            height: 150px;
+            width: 11.542vw  /* 260/19.2 */;
+            height: 6.8125vw  /* 150/19.2 */;
+            line-height: 6.4125vw  /* 150/19.2 */;
+            text-align: center;
             background: url("../images/cancelBtn.png") no-repeat;
             background-size: 100% 100%;
-            font-size: 40px;
+            font-size: 2.083vw  /* 40/19.2 */;
             font-weight: 800;
             color: #0F5195;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
         }
     }
 }

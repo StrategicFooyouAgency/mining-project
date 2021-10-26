@@ -1,15 +1,16 @@
 .DragonSelect {
     width: 100%;
     background-color: #E8DBB8;
-    padding: 30px 0;
+    padding: 1.5625vw  /* 30/19.2 */ 0;
+    margin-bottom: 7.8125vw  /* 150/19.2 */;
     > .DragonSelect-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
 
         > .DragonSelect-list-item {
-            width: 252px;
-            height: 315px;
+            width: 13.125vw  /* 252/19.2 */;
+            height: 16.40625vw  /* 315/19.2 */;
             background: url("../images/itemBgYellowAdd.png") no-repeat;
             background-size: 100% 100%;
             display: flex;
@@ -19,8 +20,8 @@
             cursor: pointer;
 
             > .DragonSelect-list-item-dragon {
-                width: 160px;
-                height: 214px;
+                width: 8.333vw  /* 160/19.2 */;
+                height: 11.146vw  /* 214/19.2 */;
                 background: url("../../../assets/images/dragon.png") no-repeat;
                 background-size: 100% 100%;
             }
@@ -28,7 +29,7 @@
             > .DragonSelect-list-item-count {
                 width: 100%;
                 position: absolute;
-                bottom: -20px;
+                bottom: -1.042vw  /* -20/19.2 */;
                 left: 50%;
                 transform: translateX(-50%);
                 font-weight: 800;
@@ -62,32 +63,31 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        margin-top: 150px;
-        //bottom: 0px;
+        bottom: 4%;
         //transform: translateY(350%);
         > .DragonSelect-btn-select {
-            width: 200px;
-            height: 100px;
+            width: 10.417vw  /* 200/19.2 */;
+            height: 5.208vw  /* 100/19.2 */;
             background: url("../images/yellowBtn.png") no-repeat;
             background-size: 100% 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
+            font-size: 2.083vw  /* 40/19.2 */;
             font-weight: bold;
             color: #95560F;
             cursor: pointer;
         }
 
         > .DragonSelect-btn-cancel {
-            width: 200px;
-            height: 100px;
+            width: 10.417vw  /* 200/19.2 */;
+            height: 5.208vw  /* 100/19.2 */;
             background: url("../images/cancelBtn.png") no-repeat;
             background-size: 100% 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40px;
+            font-size: 2.083vw  /* 40/19.2 */;
             font-weight: bold;
             color: #0F5195;
             cursor: pointer;

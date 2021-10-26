@@ -184,6 +184,7 @@ const Lease = props => {
                    </div>
                </div>
                <Modal
+                   title=' '
                    visible={leaseInfoModal.visible}
                    destroyOnClose={true}
                    footer={null}
@@ -191,8 +192,7 @@ const Lease = props => {
                        setLeaseInfoModal(state => ({...state, visible: false}))
                    }}
                    className='CustomDialog'
-                   width={916}
-                   style={{height: '812px'}}
+                   width='47vw'
                    maskClosable={false}
                >
                    <LeaseInfo onCancel={() => {
