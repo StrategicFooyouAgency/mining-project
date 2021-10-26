@@ -15,7 +15,8 @@ class Inventory extends Component {
         selectModalVisible: false,
         sellModalVisible: false,
         giftModalVisible: false,
-        eggModalVisible: true
+        eggModalVisible: false,
+        eggSellModalVisible: false
 
 	};
 
@@ -64,13 +65,22 @@ class Inventory extends Component {
         this.setState({giftModalVisible: false});
     }
 
-    // Egg 的详情
+    // Egg 的详情 ===================================================
     showEggModal = () => {
         this.setState({eggModalVisible: true});
     }
     closeEggModal = () => {
         this.setState({eggModalVisible: false});
     }
+
+    // EggSell 弹框 -===============================================
+    showEggSellModal = () => {
+        this.closeEggModal();
+        this.setState({eggSellModalVisible: true});
+    };
+    closeEggSellModal = () => {
+        this.setState({eggSellModalVisible: false});
+    };
 
 
     render() {
@@ -169,7 +179,7 @@ class Inventory extends Component {
                             </div>
 
                             <div className="dragon-content">
-                                <div className="dragon-item" onClick={this.showDragonModal}>
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
@@ -181,27 +191,27 @@ class Inventory extends Component {
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
-                                <div className="dragon-item">
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
-                                <div className="dragon-item">
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
-                                <div className="dragon-item">
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
-                                <div className="dragon-item">
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
-                                <div className="dragon-item">
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
-                                <div className="dragon-item">
+                                <div className="dragon-item" onClick={this.showEggModal}>
                                     <img src="/assets/images/food.png" alt="" />
                                     <div className="clock"></div>
                                 </div>
@@ -556,6 +566,97 @@ class Inventory extends Component {
                         <div className="modal-footer-btn cancel-btn">Cancel</div>
                     </div>
                 </Modal>
+
+                {/* Egg 的详情 */}
+                <Modal title="Egg" width={916} className="account-modal account-modal-mutiple account-modal-egg" visible={this.state.eggModalVisible}  onCancel={this.closeEggModal} maskClosable={false}>
+                    <div className="modal-body-body">
+                        <div className="egg-content-a">
+                            <div className="egg-info">
+                                <img src="/assets/images/dragon.png" alt="egg" />
+                                <div className="egg-info-des">
+                                    Adult:00：28：47
+                                </div>
+                            </div>
+
+                            <div className="egg-text">
+                                <div className="egg-text-item">Grand<br/>Parent</div>
+                                <div className="egg-text-item">Parent</div>
+                            </div>
+
+                            <div className="egg-cards">
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+                    <div className="modal-body-footer">
+                        <div className="modal-footer-btn sell-btn" onClick={this.showEggSellModal}>Sell</div>
+                        <div className="modal-footer-btn hatch-btn">Hatch</div>
+                        <div className="modal-footer-btn gift-btn">Gift</div>
+                    </div>
+                </Modal>
+
+                 {/* Egg Sell 的弹框 */}
+                 <Modal title="Egg Sell" width={916} className="account-modal account-modal-mutiple account-modal-eggsell" visible={this.state.eggSellModalVisible}  onCancel={this.closeEggSellModal} maskClosable={false}>
+                    <div className="modal-body-body">
+                        <div className="egg-content-a">
+                            <div className="egg-info">
+                                <img src="/assets/images/dragon.png" alt="egg" />
+                                <div className="egg-info-des">
+                                    Adult:00：28：47
+                                </div>
+                            </div>
+
+                            <div className="egg-text">
+                                <div className="egg-text-item">Grand<br/>Parent</div>
+                                <div className="egg-text-item">Parent</div>
+                            </div>
+
+                            <div className="egg-cards">
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                                <div className="egg-card">
+                                    <img src="/assets/images/dragon.png" alt="egg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="egg-content-b">
+                            <div className="input-box">
+                                <div className="input-title">Price</div>
+                                <input type="text" className="input-price" value="0"/>
+                                <div className="input-btn">USDT</div>
+                            </div>
+                            <div className="price-info">
+                                A <span>3.5%</span> fee will be taken from the final sale price.
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div className="modal-body-footer">
+                        <div className="modal-footer-btn sell-btn">Sell</div>
+                        <div className="modal-footer-btn cancel-btn">Cancel</div>
+                    </div>
+                </Modal>
+
 
 
             </div>

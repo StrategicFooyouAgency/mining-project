@@ -1019,6 +1019,9 @@
                     font-size: 26px;
                     line-height: 1em;
                     margin: 34px 0 0px;
+                    span {
+                        color: #2251A8;
+                    }
                 }
             }
         
@@ -1094,6 +1097,236 @@
                      background: url(../../../assets/images/modal-footer-btn03.png) center/100% 100%;
 
                 }
+            }
+        }
+    }
+
+    // Egg 弹框
+    &.account-modal-egg {
+        font-weight: 800;
+        .modal-body-body {
+            .egg-content-a {
+                padding: 40px 70px;
+                display: flex;
+                .egg-info {
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: center;
+                    align-items: center;
+                    width: 260px;
+                    img {
+                        width: 235px;
+                        display: block;
+                    }
+                    .egg-info-des {
+                        font-size: 30px;
+                        color: #804809;
+                    }
+                }
+                .egg-text {
+                    width: 150px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .egg-text-item {
+                        flex: 1 1 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 40px;
+                        color: #804809;
+                    }
+                }
+                .egg-cards {
+                    flex: 1 1 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .egg-card {
+                        margin-bottom: 10px;
+                        background: url(../../../assets/images/assets03.png) center / 100% 100%;
+                        width: 145px;
+                        height: 181px;
+                        display: flex;
+                        img {
+                            margin: auto;
+                            width: 91px;
+                        }
+                    }
+                }
+            }
+        }
+        .modal-body-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .modal-footer-btn {
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                color:#95560F;
+                font-weight: 800;
+                margin: 0 20px;
+
+                &.sell-btn {
+                    color:#95560F;
+                     background: url(../../../assets/images/modal-footer-btn02.png) center/100% 100%;
+
+                }
+
+                &.hatch-btn {
+                    color: #0F5195;
+                     background: url(../../../assets/images/modal-footer-btn03.png) center/100% 100%;
+
+                }
+                
+                &.gift-btn {
+                    color:#95560F;
+                    background: url(../../../assets/images/modal-footer-btn05.png) center/100% 100%;
+
+                }
+                
+            }
+        }
+    }
+
+    // Egg Sell 弹框
+    &.account-modal-eggsell {
+        font-weight: 800;
+        .modal-body-body {
+            .egg-content-a {
+                padding: 40px 70px;
+                display: flex;
+                .egg-info {
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: center;
+                    align-items: center;
+                    width: 260px;
+                    img {
+                        width: 235px;
+                        display: block;
+                    }
+                    .egg-info-des {
+                        font-size: 30px;
+                        color: #804809;
+                    }
+                }
+                .egg-text {
+                    width: 150px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .egg-text-item {
+                        flex: 1 1 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 40px;
+                        color: #804809;
+                    }
+                }
+                .egg-cards {
+                    flex: 1 1 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .egg-card {
+                        margin-bottom: 10px;
+                        background: url(../../../assets/images/assets03.png) center / 100% 100%;
+                        width: 145px;
+                        height: 181px;
+                        display: flex;
+                        img {
+                            margin: auto;
+                            width: 91px;
+                        }
+                    }
+                }
+            }
+            .egg-content-b {
+                padding: 30px 0 60px;
+
+                .input-box {
+                    display: flex;
+                    justify-content: center;
+                    .input-title {
+                        margin-right: 10px;
+                        font-size: 40px;
+                        color: #804809;
+                    }
+                    .input-price {
+                        padding-left: 60px;
+                        color: #fff;
+                        font-size: 40px;
+                        flex: 0 0 auto;
+                        outline: none;;
+                        border: none;
+                        width: 408px;
+                        height: 67px;
+                        background: #676F96;
+                        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                        border-radius: 5px;
+                    }
+                    .input-btn {
+                        cursor: pointer;
+                        margin-left: -8px;
+                        width: 170px;
+                        height: 72px;
+                        line-height: 72px;
+                        font-size: 40px;
+                        text-align: center;
+                        color: #fff;
+                        background: url(../../../assets/images/register-sent.png) center / 100% 100%;
+                    }
+                   
+                }
+                .price-info {
+                    text-align: center;
+                    color: #804809;
+                    font-size: 26px;
+                    line-height: 1em;
+                    margin: 34px 0 0px;
+                    span {
+                        color: #2251A8;
+                    }
+                }
+            }
+        }
+        .modal-body-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .modal-footer-btn {
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                color:#95560F;
+                font-weight: 800;
+                // margin: 0 40px;
+
+                &.sell-btn {
+                    color:#95560F;
+                     background: url(../../../assets/images/modal-footer-btn02.png) center/100% 100%;
+
+                }
+
+                &.cancel-btn {
+                    color: #0F5195;
+                     background: url(../../../assets/images/modal-footer-btn03.png) center/100% 100%;
+
+                }
+                
+                
+                
             }
         }
     }
