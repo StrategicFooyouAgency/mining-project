@@ -230,8 +230,8 @@ const Mountain = () => {
                 <Modal
                     visible={dragonListModal.visible}
                     className='CustomDialog'
-                    width='50vw'
-                    style={{height: `${dragonListModal.type === 'stake' ? 74 : 93}vh`}}
+                    width={1076}
+                    style={{height: `${dragonListModal.type === 'stake' ? 942 : 1092}px`}}
                     onCancel={() => {
                         setDragonListModal(state => ({...state, visible: false}))
                     }}

@@ -135,60 +135,62 @@ const LeaseInfo = props => {
     }
 
     return (
-        <div className='LeaseInfo'>
-            <div className="LeaseInfo-title">Inventory</div>
-            <div className="LeaseInfo-l">
-                <div className="LeaseInfo-l-id">Player ID</div>
-                <div className='LeaseInfo-l-text1'>Ruby's Power: 2584</div>
-                <div className='LeaseInfo-l-text1'>Rental time: 1 Month</div>
-                <div className='LeaseInfo-l-text1'>Rental fee: 30% income</div>
-            </div>
-            <div className="LeaseInfo-r">
-                <div className="LeaseInfo-r-t">
-                    <div className="LeaseInfo-r-t-l">
-                        <div className="LeaseInfo-r-t-l-text0">{Number(156.166).toLocaleString()} CST</div>
-                        <div className="LeaseInfo-r-t-l-text">{Number(759332.187).toLocaleString()} Ruby</div>
-                        <div className="LeaseInfo-r-t-l-text">{Number(137952).toLocaleString()} Foods</div>
-                    </div>
-                    <div className="LeaseInfo-r-t-r">
-                        <div className="LeaseInfo-r-t-r-btn" onClick={() => {
-                            setModalProps(state => ({
-                                ...state,
-                                title: 'Dragon Information',
-                                visible: true,
-                                class: 'CustomDialog'
-                            }))
-                        }}>
-                            <div>Dragons</div>
-                            <div>126</div>
-                        </div>
-                        <div className="LeaseInfo-r-t-r-btn" onClick={() => {
-                            setModalProps(state => ({
-                                ...state,
-                                title: 'Build Information',
-                                visible: true,
-                                class: 'CustomDialog'
-                            }))
-                        }}>
-                            <div>Buildings</div>
-                            <div>51</div>
-                        </div>
-                        <div className="LeaseInfo-r-t-r-btn" onClick={() => {
-                            setModalProps(state => ({
-                                ...state,
-                                title: 'Island Information',
-                                visible: true,
-                                class: 'CustomNoHeaderDialog'
-                            }))
-                        }}>
-                            <div>Islands</div>
-                            <div>2</div>
-                        </div>
-                    </div>
+        <div className='LeaseInfo-wrapper'>
+            <div className='LeaseInfo'>
+                <div className="LeaseInfo-title">Inventory</div>
+                <div className="LeaseInfo-l">
+                    <div className="LeaseInfo-l-id">Player ID</div>
+                    <div className='LeaseInfo-l-text1'>Ruby's Power: 2584</div>
+                    <div className='LeaseInfo-l-text1'>Rental time: 1 Month</div>
+                    <div className='LeaseInfo-l-text1'>Rental fee: 30% income</div>
                 </div>
-                <div className="LeaseInfo-r-b">
-                    You need to pay <span style={{color: '#2251A8'}}>10 CSTS</span> as a deposit, which will be returned
-                    after completing the order
+                <div className="LeaseInfo-r">
+                    <div className="LeaseInfo-r-t">
+                        <div className="LeaseInfo-r-t-l">
+                            <div className="LeaseInfo-r-t-l-text0">{Number(156.166).toLocaleString()} CST</div>
+                            <div className="LeaseInfo-r-t-l-text">{Number(759332.187).toLocaleString()} Ruby</div>
+                            <div className="LeaseInfo-r-t-l-text">{Number(137952).toLocaleString()} Foods</div>
+                        </div>
+                        <div className="LeaseInfo-r-t-r">
+                            <div className="LeaseInfo-r-t-r-btn" onClick={() => {
+                                setModalProps(state => ({
+                                    ...state,
+                                    title: 'Dragon Information',
+                                    visible: true,
+                                    class: 'CustomDialog'
+                                }))
+                            }}>
+                                <div>Dragons</div>
+                                <div>126</div>
+                            </div>
+                            <div className="LeaseInfo-r-t-r-btn" onClick={() => {
+                                setModalProps(state => ({
+                                    ...state,
+                                    title: 'Build Information',
+                                    visible: true,
+                                    class: 'CustomDialog'
+                                }))
+                            }}>
+                                <div>Buildings</div>
+                                <div>51</div>
+                            </div>
+                            <div className="LeaseInfo-r-t-r-btn" onClick={() => {
+                                setModalProps(state => ({
+                                    ...state,
+                                    title: 'Island Information',
+                                    visible: true,
+                                    class: 'account-modal account-modal-simble'
+                                }))
+                            }}>
+                                <div>Islands</div>
+                                <div>2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="LeaseInfo-r-b">
+                        You need to pay <span style={{color: '#2251A8'}}>10 CSTS</span> as a deposit, which will be returned
+                        after completing the order
+                    </div>
                 </div>
             </div>
             <div className="LeaseInfo-rent" onClick={() => {
@@ -196,7 +198,7 @@ const LeaseInfo = props => {
                     ...state,
                     title: 'rent',
                     visible: true,
-                    class: 'CustomNoHeaderDialog'
+                    class: 'account-modal account-modal-simble'
                 }))
             }}>Rent
             </div>
@@ -209,8 +211,8 @@ const LeaseInfo = props => {
                     setModalProps(state => ({...state, visible: false}))
                 }}
                 className={modelProps.class}
-                width='50vw'
-                style={{height: '85vh'}}
+                width={916}
+                style={{height: '812px'}}
                 maskClosable={false}
             >
                 {renderModalContent()}

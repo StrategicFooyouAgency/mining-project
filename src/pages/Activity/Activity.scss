@@ -1,74 +1,129 @@
+#myActivity {
+  margin-top: 0;
+  padding-bottom: 300px;
+  box-sizing: content-box;
+  min-height: 1200px;
+  background: url(../../assets/images/global-bg.png) no-repeat center 0/100% 100%;
 
-.page-header {
-  .header-container {
-    margin: auto;
-    width: 1400px;
+  .page-header {
+    .header-container {
+      margin: 0 auto;
+      width: 1200px;
+      display: flex;
+    }
   }
-}
 
 
-.mining-layout {
-  min-height: 100%;
-  background: #191919;
-  display: flex;
-  .container {
-    flex: 0 0 auto;
-    margin: 0 auto ;
-    width: 1400px;
+  .mining-layout {
+    min-height: 100%;
+
+    background: #191919;
     display: flex;
-    .ant-layout {
-      flex: 1 0 auto;
-      margin-top: 25px;
-      // 侧边栏
-      .ant-layout-sider {
-        padding-top: 40px;
-        max-width: 268px;
-        min-width: 268px;
-        width: 268px;
-        background:#2B2B2B;
-        .ant-menu {
-          
-          .ant-menu-item {
-            position: relative;
-            margin: 0;
-            height: 64px;
-            padding: 0 40px;
-            line-height: 64px;
-            background:#2B2B2B;
-            &::before {
-              content: "";
-              position: absolute;
-              left: 15px;
-              top: 50%;
-              transform: translateY(-50%);
-              width: 1em;
-              height: 1em;
-              border: 1px solid #fff;
-              border-radius: 50%;
+
+    .container {
+      margin: 0 auto;
+      width: 1200px;
+      display: flex;
+
+      .sider {
+        // flex: 0 0 auto;
+        width: 385px;
+        background: url(../../assets/images/sider-bg.png) no-repeat center/cover border-box;
+        border: 28px solid;
+        border-image: url(../../assets/images/border.png);
+        border-image-slice: 140 49%;
+        border-image-width: 140px 150px;
+      }
+
+      .ant-layout {
+        flex: 1 0 auto;
+
+        // 侧边栏
+        .ant-layout-sider {
+          width: 376px;
+          background: #2B2B2B;
+          background: url(../../assets/images/sider-bg.png) no-repeat center/cover border-box;
+
+          .ant-menu {
+            margin: 80px auto 0;
+            width: 270px;
+            text-align: center;
+            line-height: 70px;
+            font-size: 30px;
+            color: #fff;
+
+            // &:active {
+            //   background-color: inherit;
+            // }
+            .ant-menu-title-content {
+              a {
+                display: block;
+                color: #fff;
+
+                &.active {
+                  background: url(../../assets/images/sider-menu-btn.png) center/100% 100%;
+                }
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: 31px;
+                  top: -8px;
+                  bottom: 0;
+                  margin-top: auto;
+                  margin-bottom: auto;
+                  width: 33px;
+                  height: 33px;
+                  background: #90AADB;
+                  border-radius: 50%;
+                }
+              }
             }
-            &.ant-menu-item-selected {
-              background: #7F7F7F;
-              &::before {
-                background: #7F7F7F; 
+
+            .ant-menu-item {
+              padding: 0;
+              height: 70px;
+              margin-bottom: 30px;
+              line-height: 70px;
+              &:active {
+                background-color: inherit;
               }
-            } 
-            &:hover {
-              background: #7F7F7F;
-              &::before {
-                background: #7F7F7F; 
-              }
+
             }
           }
         }
+
+        // 右侧主要内容
+        .ant-layout-content {
+          flex: 1 0 auto;
+          min-height: auto;
+          background: #7F7F7F;
+          width: 833px;
+          // margin-left: 50px;
+        }
       }
-      // 右侧主要内容
-      .ant-layout-content {
-        flex: 1 0 auto;
-        min-height: auto;
-        background:#7F7F7F;
+    }
+  }
+
+.ant-layout-sider-children{
+  ul {
+    background-color: transparent !important;
+    .ant-menu-item-selected {
+    background-color: transparent !important;
+    .ant-menu-title-content{
+      position: static;
+      a{
+        position: relative;
+        z-index: 1;
       }
+      .router-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
     }
   }
 }
 
-
+}

@@ -1,0 +1,133 @@
+
+.rank-content{
+    .swipper-content{
+        height: 188px;
+        text-align: center;
+        // padding-top: 80px;
+        background:#424242;
+        position: relative;
+        z-index: 2;
+        h3{
+            height: 188px !important;
+        }
+    }
+    .rank-body{
+        position: relative;
+        margin-top: -10px;
+        .content-background{
+            height: 1365px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+         }
+         .body-header{
+             padding: 2px 10px 0;
+            .dragon {
+                margin-top: 20px;
+                .ant-tabs {
+                   
+                    // 选项卡到导航
+                    .ant-tabs-nav {
+                        margin-bottom: 0;
+                        height: 85px;
+                        // line-height: 120px;
+                        background:#424242;
+                        // background: url(../../../assets/images/assets02.png) no-repeat center / 100% 100%;
+                        &::before {
+                            display: none;
+                        }
+                        .ant-tabs-nav-wrap {
+                            .ant-tabs-nav-list {
+                                padding: 0 0;
+                                margin-left: 25px;
+                                position: relative;
+                                z-index: 2;
+                                .ant-tabs-tab {
+                                    height: 80px;
+                                    padding: 0 20px;
+                                    margin: 0;
+                                    font-size: 26px;
+                                    font-weight: 800;
+                                    width: 173px;
+                                    color: #4C4434;
+                                    align-items: flex-start;
+                                    border: 5px solid;
+                                    border-image-source: url(../../../assets/images/asset-btn4.png);
+                                    border-image-slice: 12 15 26 fill;
+                                    border-image-width: 12px 15px 26px;
+                                    display: flex;
+                                    justify-content: center;
+                                    .ant-tabs-tab-btn {
+                                        line-height: 56px;
+                                        user-select: none;
+                                        font-size: 26px;
+                                        font-family: Microsoft YaHei !important;
+                                        font-weight: 800;
+                                        color: #4C4434;
+                                        &:active {
+                                            color: #4C4434;
+                                        }
+                                    }
+                                    &.ant-tabs-tab-active {
+                                        border-image-source: url(../../../assets/images/asset-btn3.png);
+                                        .ant-tabs-tab-btn {
+                                            color: #4C4434;
+                                        }
+                                        
+                                    }
+                                }
+                                .ant-tabs-ink-bar {
+                                    display: none;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .ant-tabs-content-holder {
+                        .ant-tabs-content {
+                            .ant-tabs-tabpane {
+                               &:first-child {
+                                   .dragon-content {
+                                       display: flex;
+                                       flex-wrap: wrap;
+                                       padding: 0px 12px 38px;
+                                    //    overflow-y: auto;
+                                       background-color: #424242;
+                                       height: 1258px;
+                                       .dragon-item {
+                                           margin-bottom: 10px;
+                                           width: 252px;
+                                           height: 315px;
+                                           background: url(../../../assets/images/assets03.png) no-repeat;
+                                           .dragon-item-img {
+                                               padding-top: 30px;
+                                               height: 220px;
+                                               display: flex;
+                                               justify-content: center;
+                                               align-items: center;
+                                           }
+                                           .dragon-item-content {
+                                               margin: 0 30px;
+                                               height: 50px;
+                                               text-align: center;
+                                               font-size: 20px;
+                                               font-weight: 800;
+                                               line-height: 1.2em;
+                                               color: #fff;
+                                               background: linear-gradient(0deg, #F28E26, #FD644F);
+                                           }
+                                        }
+                                   }
+                               }
+                            }
+                        }
+                    }
+        
+                }
+                
+            }
+         }
+    }
+}

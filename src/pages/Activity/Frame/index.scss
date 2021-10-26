@@ -1,0 +1,261 @@
+// .mountain-fram {
+//   .header {
+//     width: 832px;
+//     height: 188px;
+//     background: yellow;
+//     position: relative;
+//     padding-top: 30px;
+//     .statistics {
+//       width: 216px;
+//       height: 51px;
+//       background: url("../../../assets/images/mountain/fram-1.png");
+//       text-align: center;
+//       position: relative;
+//       margin-left: -5px;
+//       span {
+//         // width: 108px;
+//         // height: 19px;
+//         font-size: 24px;
+//         font-family: Microsoft YaHei;
+//         font-weight: bold;
+//         color: #4a412f;
+//         line-height: 46px;
+//       }
+//     }
+//     .statistics-list {
+//       display: flex;
+//       justify-content: space-around;
+//       margin-top: 20px;
+//       .item {
+//         display: flex;
+//         height: 55px;
+//         .item-icon {
+//           width: 55px;
+//           height: 55px;
+//           background: #000;
+//           border-radius: 28px;
+//           margin-right: 13px;
+//         }
+//         .item-content {
+//           color: red;
+//           font-weight: bold;
+//           .value {
+//             height: 20px;
+//             font-size: 20px;
+//           }
+//           .label {
+//             margin-top: 5px;
+//             height: 13px;
+//             font-size: 16px;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .content {
+//     width: 833px;
+//     height: 1388px;
+//     background: url("../../../assets/images/mountain/fram-2.png") no-repeat;
+//     background-size: 833px 1386px;
+//     .part-first {
+//       background-image: url("../../../assets/images/mountain/assets01.png");
+//       background-size: 833px 122px;
+//       font-size: 44px;
+//       font-weight: 800;
+//       color: #ffffff;
+//       padding-left: 80px;
+//       height: 122px;
+//       line-height: 118px;
+//     }
+//     .part-second {
+//       width: 804px;
+//       height: 284px;
+//       background-image: url("../../../assets/images/mountain/fram-4.png");
+//       background-size: 833px 284px;
+//     }
+//     .part-third {
+//       background-image: url("../../../assets/images/mountain/fram-3.png");
+//       background-size: 833px 122px;
+//       font-size: 44px;
+//       font-weight: 800;
+//       color: #ffffff;
+//       height: 122px;
+//       line-height: 118px;
+//     }
+//   }
+// }
+.mountain-fram{
+  background: #424242;
+  height: 100%;
+  width: 832px;
+  .header{
+    height: 188px;
+    // background:#C1C1C1;// todo:
+    background-image: url(./asset-header.png);
+    padding-top: 30px;
+    .statistics-title{
+      position: relative;
+      margin-left: -7px;
+       width: 216px;
+       height: 51px;
+       background: url("../../../assets/images/mountain/fram-1.png");
+       font-size: 24px;
+       font-family: Microsoft YaHei;
+       font-weight: bold;
+       color: #4A412F;
+       span{
+         line-height: 19px;
+         vertical-align: middle;
+         margin-top: 16px;
+         margin-left: 46px;
+         display: inline-block;
+       }
+       margin-bottom: 19px;
+    }
+    .statistics-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .item{
+          display: flex;
+          .item-icon{
+            margin-right: 13px;
+            width: 55px;
+            height: 55px;
+            background: #000;
+            border-radius: 50%;
+          }
+          .item-content {
+           font-weight: bold;
+           color: #4A412F;
+           font-family: Microsoft YaHei;
+           margin-top: 6px;
+          .value {
+            line-height: 20px;
+            font-size: 20px;
+          }
+          .label {
+            margin-top: 5px;
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+        }
+    }
+  }
+    .content {
+    // height: 1388px;
+    // background: url("../../../assets/images/mountain/fram-2.png") no-repeat;
+    // background-size: 833px 1395px;
+    // background-position-y: -9px;
+    // display: flex;
+    // justify-content: center;
+    // padding-top: 30px;
+    position: relative;
+    .content-background{
+       height: 1366px;
+       position: absolute;
+       top: -10px;
+       left: 0;
+       width: 100%;
+    }
+    .part-first {
+      background-image: url("../../../assets/images/mountain/fram-610-0.png");
+      background-size: 1300px 122px;
+      font-size: 44px;
+      font-weight: 800;
+      color: #ffffff;
+      padding-left: 79px;
+      line-height: 122px;
+      padding-top: 5px;
+      height: 122px;
+      font-family: MicrosoftYaHeiHeavy;
+    }
+    .part-second {
+      position: relative;
+      width: 804px;
+      height: 284px;
+      border: 10px solid;
+      // border-image-source: url('../../../assets/images/mountain/fram-4.png');
+      // border-image-slice: 57 57 56 57;
+      // border-image-width: 36px;
+      border-image-source: url(../../../assets/images/mountain/fram-4.png);
+      border-image-slice: 49% fill;
+      border-image-width: 50px;
+      border-image-repeat: stretch;
+      padding-top: 10px;
+      margin-left: 14px;
+      display: flex;
+      .part-second-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-left: 31px;
+          .part-second-item{
+            margin-right: 19px;
+            .part-second-item-text{
+              height: 16px;
+              line-height: 16px;
+              font-size: 16px;
+              font-family: Microsoft YaHei;
+              font-weight: bold;
+              color: #FFFFFF;
+              margin-bottom: 18px;
+            }
+            .part-second-item-text.text-1,.text-3{
+              text-align: center;
+            }
+            .part-second-item-btn{
+              width: 241px;
+              height: 42px;
+              background: #2453A9;
+              border: 1px solid #000000;
+              box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+              border-radius: 5px;
+              font-size: 20px;
+              font-family: Microsoft YaHei;
+              font-weight: bold;
+              color: #C1C1C1;
+              margin-bottom: 33px;
+              line-height: 42px;
+            }
+          }
+        
+      }
+      .part-second-right{
+        padding-top: 15px;
+        padding-right: 32px;
+        img{
+          width: 108px;
+          height: 121px;
+          margin-left: 37px;
+          // margin-right: 88px;
+          // box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.34);
+        }
+        .assets-content-inner-btn1 {
+          margin-top: -1px;
+          width: 187px;
+          height: 93px;
+          font-family: Microsoft YaHei !important;
+          font-weight: bold;
+          color: #95560F;
+          text-align: center;
+          line-height: 72px;
+          border: 5px solid;
+          border-image-source: url(../../../assets/images/asset-btn1.png);
+          border-image-slice: 10 16 22 fill;
+          border-image-width: 10px 16px 22px;
+          font-size: 26px;
+      }
+      }
+    }
+    .swap-plate{
+      .swap-plate-item{
+        width: 804px;
+        margin-left: 14px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

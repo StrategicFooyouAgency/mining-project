@@ -21,7 +21,7 @@
             > .DragonSelect-list-item-dragon {
                 width: 160px;
                 height: 214px;
-                background: url("../images/yellowLong.png") no-repeat;
+                background: url("../../../assets/images/dragon.png") no-repeat;
                 background-size: 100% 100%;
             }
 
@@ -62,7 +62,7 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        margin-top: 80px;
+        margin-top: 150px;
         //bottom: 0px;
         //transform: translateY(350%);
         > .DragonSelect-btn-select {

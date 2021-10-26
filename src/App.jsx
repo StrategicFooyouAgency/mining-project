@@ -1,5 +1,5 @@
 // 模块1
-import React from 'react';
+import React, {Component} from 'react';
 import { Layout} from 'antd';
 import { Route, Switch, Redirect } from "react-router-dom";
 import './util/tool.jsx';
@@ -30,30 +30,35 @@ global.constants = {
 	accounts:null,
 }
 
-function App() {
-  return (
-    <div className="app">
-       {/* <ComboParts width={256} height={256} parts={['Arm/Black_Arm','Body/Black_Body','Full/BlackDargon',
-        'Head/Black_Head','Leg/Black_Leg','Wing/Black_Wing']} anim= "Idle"/> */}
-       <Layout className="app-layout">
-        <PageHeader />
-        <Content>
-            <Switch>
-               {/* <Route path="/Dashboard" component={Dashboard} /> */}
-              <Route path="/activity" component={Activity} />
-              <Route path="/marketplace" component={Marketpalce} />
-              <Route path="/mountain" component={Mountain} />
-              <Route path="/lease" component={Lease} />
-              <Route path="/game" component={Game} />
-			        <Route path="/MyAccount" component={MyAccount} />
-              <Route path="/" component={Website3rd} />
-              <Redirect to="/"/>
-            </Switch>
-        </Content>
-      </Layout>
 
-    </div>
-  );
+class App extends Component {
+  render() {
+   
+
+    return (
+      <div className="app">
+          {/* <ComboParts width={256} height={256} parts={['Arm/Black_Arm','Body/Black_Body','Full/BlackDargon',
+          'Head/Black_Head','Leg/Black_Leg','Wing/Black_Wing']} anim= "Idle"/> */}
+          <Layout className="app-layout">
+            <PageHeader />
+            <Content>
+                <Switch>
+                    {/* <Route path="/Dashboard" component={Dashboard} /> */}
+                  <Route path="/activity" component={Activity} />
+                  <Route path="/marketplace" component={Marketpalce} />
+                  <Route path="/mountain" component={Mountain} />
+                  <Route path="/lease" component={Lease} />
+                  <Route path="/game" component={Game} />
+                  <Route path="/MyAccount" component={MyAccount} />
+                  <Route path="/" component={Website3rd} />
+                  <Redirect to="/"/>
+                </Switch>
+            </Content>
+          </Layout>
+      </div>
+    );
+  }
 }
 
 export default App;
+

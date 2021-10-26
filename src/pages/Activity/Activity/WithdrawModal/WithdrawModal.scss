@@ -1,0 +1,483 @@
+.Modal {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.Modal-content {
+    padding: 30px;
+    margin: auto;
+    width: 916px;
+    height: 912px;
+    border: 5px solid;
+    border-image-source: url(../../../../assets/images/mountain/asset-j1.png);
+    border-image-slice: 10 16 22 fill;
+    // border-image-width: 10px 16px 22px;
+    // z-index: 999;
+    position: relative;
+
+    .content {
+        margin-top: 215px;
+        display: flex;
+
+        .content-left {
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+
+            .content-left-title {
+                width: 170px;
+                height: 15px;
+                font-size: 20px;
+                margin-bottom: 15px;
+                font-family: Microsoft YaHei;
+                font-weight: 800;
+                color: #804809;
+            }
+
+            .content-left-image {
+                height: 313px;
+                width: 215px;
+                border-radius: 37px;
+                background-image: url(../../../../assets/images/activity/WechatIMG245.png);
+                background-position: -7px -2px;
+                border: none;
+                right: 20px;
+            }
+
+            .content-left-ccc {
+                width: 130px;
+                height: 35px;
+                background: #FFD85E;
+                border: 2px solid #D04E00;
+                border-radius: 17px;
+                font-size: 26px;
+                font-family: Microsoft YaHei;
+                font-weight: 800;
+                color: #804809;
+                text-align: center;
+            }
+
+            .content-left-ddd {
+                margin-left: 10px;
+                margin-top: 20px;
+                width: 243px;
+                height: 18px;
+                font-size: 20px;
+                font-family: Microsoft YaHei;
+                font-weight: 800;
+                color: #804809;
+            }
+
+            .content-left-eee {
+                width: 155px;
+                height: 71px;
+                font-size: 26px;
+                font-weight: 800;
+                color: #95560F;
+                text-align: center;
+                line-height: 60px;
+                margin-top: 20px;
+                // margin-top: 5px;
+                border: 5px solid;
+                border-image-source: url(../../../../assets/images/activity/button1.png);
+                border-image-slice: 10 16 22 fill;
+                border-image-width: 8px 15px 19px;
+            }
+        }
+
+        .content-right {
+            margin-left: 10px;
+
+            .content-right-1 {
+                display: flex;
+                justify-content: space-around;
+
+                .hearder {
+                    .hearder-1 {
+                        font-size: 26px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 800;
+                        color: #804809;
+                    }
+
+                    .hearder-2 {
+                        width: 142px;
+                        height: 15px;
+                        font-size: 20px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 800;
+                        color: #804809;
+                    }
+                }
+
+                .right {
+                    margin-left: 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+
+                    .right-1 {
+                        width: 142px;
+                        height: 38px;
+                        margin-top: 0;
+                        margin: 5px;
+                        background-image: url(../../../../assets/images/activity/green.png);
+                        background-size: 141px 41px;
+                        border-radius: 11px;
+                        background-position: 0px 0px;
+                        border: none;
+                        text-align: center;
+                        line-height: 38px;
+                        align-items: center;
+                    }
+
+                    .right-2 {
+                        width: 142px;
+                        height: 38px;
+                        margin: 5px;
+                        // margin-top: 0;
+                        background-image: url(../../../../assets/images/activity/green.png);
+                        background-size: 141px 41px;
+                        border-radius: 11px;
+                        background-position: 0px 0px;
+                        border: none;
+                        text-align: center;
+                        line-height: 38px;
+                        align-items: center;
+                    }
+
+                    .right-3 {
+                        width: 142px;
+                        height: 38px;
+                        margin: 5px;
+                        background-image: url(../../../../assets/images/activity/green.png);
+                        background-size: 141px 41px;
+                        border-radius: 11px;
+                        background-position: 0px 0px;
+                        border: none;
+                        text-align: center;
+                        line-height: 38px;
+                        align-items: center;
+                    }
+
+                    .right-4 {
+                        width: 142px;
+                        height: 38px;
+                        margin: 5px;
+                        background-image: url(../../../../assets/images/activity/green.png);
+                        background-size: 141px 41px;
+                        border-radius: 11px;
+                        background-position: 0px 0px;
+                        border: none;
+                        text-align: center;
+                        line-height: 38px;
+                        align-items: center;
+                    }
+                }
+            }
+
+            .content-right-2 {
+                // margin-top: 10px;
+
+                .title {
+                    width: 118px;
+                    height: 15px;
+                    font-size: 20px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 800;
+                    color: #804809;
+                }
+
+                .body {
+                    width: 547px;
+                    height: 127px;
+                    margin-top: 20px;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                    background-image: url(../../../../assets/images/activity/111.png);
+                    // background-size: 141px 41px;
+                    border-radius: 11px;
+                    // background-position: 0px 0px;
+                    border: none;
+                    font-size: 16px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 800;
+                    color: #FFFFFF;
+                }
+
+            }
+
+            .content-right-3 {
+                display: flex;
+                justify-content: flex-start;
+
+                #cent {
+
+                    .title {
+                        width: 118px;
+                        height: 15px;
+                        font-size: 20px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 800;
+                        color: #804809;
+                    }
+
+                    .body {
+                        width: 267px;
+                        height: 130px;
+                        // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                        margin-top: 20px;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                        background-image: url(../../../../assets/images/activity/111.png);
+                        // background-size: 141px 41px;
+                        border-radius: 11px;
+                        // background-position: 0px 0px;
+                        border: none;
+
+                        .body-1 {
+                            margin-left: 20px;
+                            margin-top: 20px;
+                            padding-top: 17;
+                            width: 200px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            font-size: 16px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 800;
+                            color: #FFFFFF;
+
+
+                            .yy-1 {
+                                width: 84px;
+                                height: 32px;
+                                text-align: center;
+                                align-items: center;
+                                line-height: 32px;
+                                background: #FF0000;
+                                border: 1px solid #000000;
+                                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+                                border-radius: 5px;
+                            }
+
+                            .yy-2 {
+                                text-align: center;
+                                align-items: center;
+                                line-height: 32px;
+                                width: 84px;
+                                height: 32px;
+                            }
+
+                            .yy-6 {
+                                width: 84px;
+                                height: 32px;
+                                text-align: center;
+                                align-items: center;
+                                line-height: 32px;
+                                background: #7B0499;
+                                border: 1px solid #000000;
+                                box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+                                border-radius: 5px;
+                            }
+
+                        }
+
+                        .body-2 {
+                            display: flex;
+                            margin-left: 20px;
+
+                            .body-img {
+                                width: 69px;
+                                height: 70px;
+                                // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                                margin-top: 30px;
+                                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                                background-image: url(../../../../assets/images/activity/121.png);
+                                // background-size: 141px 41px;
+                                border-radius: 11px;
+                                // background-position: 0px 0px;
+                                border: none;
+                            }
+
+                            .body-txt {
+                                margin-top: 10px;
+                                font-size: 14px;
+                                margin-left: 5px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 800;
+                                color: #FFFFFF;
+
+                                .body-txt-1 {
+                                    // margin-bottom: 5px;
+                                }
+
+                                .body-txt-2 {
+                                    // margin-bottom: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content-right-4 {
+                .title {
+                    width: 118px;
+                    height: 15px;
+                    font-size: 20px;
+                    font-family: Microsoft YaHei;
+                    font-weight: 800;
+                    color: #804809;
+                }
+
+                .body-y {
+                    width: 547px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    height: 127px;
+                    margin-top: 20px;
+                    padding-top: 10px;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                    background-image: url(../../../../assets/images/activity/111.png);
+                    // background-size: 141px 41px;
+                    border-radius: 11px;
+                    // background-position: 0px 0px;
+                    border: none;
+                    display: flex;
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 800;
+                        color: #FFFFFF;
+
+                    .body-1 {
+                        text-align: center;
+                        align-items: center;
+                        // line-height: 62px;
+                        width: 85px;
+                        height: 62px;
+                        // padding: 10px;
+                        margin-top: 20px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                        background-image: url(../../../../assets/images/activity/shen.png);
+                        // background-size: 141px 41px;
+                        border-radius: 23px;
+                        // background-position: 0px 0px;
+                        border: none;
+                    }
+
+                    .body-2 {
+                        width: 62px;
+                        height: 31px;
+                        text-align: center;
+                        align-items: center;
+                        // line-height: 62px;
+                        margin-top: 40px;
+                        font-size: 14px;
+                        font-family: Microsoft YaHei;
+                        font-weight: 800;
+                        color: #FFFFFF;
+                    }
+
+                    .body-3 {
+
+                        width: 85px;
+                        height: 62px;
+                        text-align: center;
+                        align-items: center;
+                        padding: 10px;
+                        // line-height: px;
+                        margin-top: 20px;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+                        background-image: url(../../../../assets/images/activity/qian.png);
+                        // background-size: 141px 41px;
+                        border-radius: 23px;
+                        // background-position: 0px 0px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 170px;
+        height: 100px;
+    }
+
+    .title {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 40px;
+        font-family: Microsoft YaHei !important;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+
+    .wthdrawModal-body {
+        margin-top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        button {
+            position: absolute;
+            font-size: 26px;
+            font-family: Microsoft YaHei;
+            font-weight: 800;
+            color: #95560F;
+        }
+
+        .amount-btn {
+            border: none;
+            width: 172px;
+            height: 73px;
+            background-image: url(../../../../assets/images/mountain/asset-t609.png);
+            background-position: -5px -2px;
+            border-radius: 37px;
+            left: 20px;
+        }
+
+        .max-btn {
+            width: 172px;
+            height: 73px;
+            border-radius: 37px;
+            background-image: url(../../../../assets/images/mountain/asset-max.png);
+            background-position: -7px -2px;
+            border: none;
+            right: 20px;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            font-size: 40px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #804809;
+            background-color: transparent;
+            height: 100%;
+            width: 328px;
+        }
+
+        .input-box {
+            height: 72px;
+            width: 561px;
+            padding: 0 110px;
+            background-image: url(../../../../assets/images/mountain/asset-t610.png);
+            background-size: 561px 74px;
+        }
+    }
+}

@@ -40,6 +40,7 @@
             color: #fff;
             font-size: 18px;
             font-family: Arial;
+            cursor: pointer;
             img {
                 margin-right: 15px;
             }
@@ -56,3 +57,109 @@
         }
     }
 }
+
+
+.account-modal {
+    // Login 弹框
+    &.account-modal-login {
+        .login-input {
+            margin: 0 auto 60px;
+            display: block;
+            border: none;
+            width: 577px;
+            height: 67px;
+            text-align: center;
+            background: #676F96;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 800;
+        }
+        .sign-forget {
+            margin: 0 auto 40px;
+            width: 577px;
+            display: flex;
+            justify-content: space-between;
+
+            .forget,.register {
+                line-height: 1em;
+                font-size: 30px;
+                font-weight: bold;
+                color: #6B9BF5;
+                cursor: pointer;
+            }
+        }
+        input::placeholder {
+            color: #fff;
+        }
+       
+    }
+
+    &.account-modal-register {
+        .register-title {
+            margin: 0 auto 10px;
+            width: 577px;
+            display: block;
+            font-size: 30px;
+            font-weight: 800;
+            color: #985D1B;
+        }
+        .register-input {
+            margin: 0 auto 40px;
+            display: block;
+            border: none;
+            width: 577px;
+            height: 67px;
+            text-align: center;
+            background: #676F96;
+            box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            font-size: 30px;
+            color: #fff;
+            font-weight: 800;
+
+            &.pwd-input {
+                margin-top: 70px;
+            }
+        }
+
+        .verif-box {
+            margin: 0 auto;
+            width: 577px;
+            display: flex;
+
+            .verif-input {
+                flex: 0 0 1;
+                height: 67px;
+                text-align: center;
+                border: none;
+                background: #676F96;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                border-radius: 5px;
+                font-size: 30px;
+                color: #fff;
+                font-weight: 800;
+            }
+            .verif-btn {
+                flex: 0 0 auto;
+                width: 170px;
+                height: 72px;
+                font-size: 40px;
+                font-weight: 800;
+                text-align: center;
+                line-height: 72px;
+                color: #fff;
+                background: url(../../assets/images/register-sent.png) no-repeat -2px 0 / 100% 100%;
+                cursor: pointer;
+            }
+        }
+
+        input::placeholder {
+            color: #fff;
+        }
+
+
+    }
+}
+

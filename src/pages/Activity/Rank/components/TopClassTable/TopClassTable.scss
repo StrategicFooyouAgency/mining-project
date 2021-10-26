@@ -1,0 +1,79 @@
+
+.table-item{
+    display: flex;
+    width: 791px;
+    height: 135px;
+    align-items: center;
+    background-image: url(../../../../../assets/images/mountain/asset-t580.png);
+    // background-size: 774px 135px;
+    padding-left: 21px;
+    margin-bottom: 3px;
+
+    background-size: 945px 135px;
+    overflow: hidden;
+    background-position: -150px 1px;
+    border-radius: 40px;
+    // box-shadow: 1px 1px 1px rgb(0,0,0,0.2);
+    .ranking-num{
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        background-position: -3px -1px;
+      background-size: 100px 100px;
+      text-align: center;
+      line-height: 94px;
+      font-size: 50px;
+font-family: Microsoft YaHei !important;
+font-weight: 800;
+color: #95560F;
+    }
+    .high-ranking-0{
+        background-image: url(../../../../../assets/images/mountain/assets-top1.png);
+    }
+    .high-ranking-1{
+        background-image: url(../../../../../assets/images/mountain/assets-top2.png);
+    }
+    .high-ranking-2{
+        background-image: url(../../../../../assets/images/mountain/assets-top3.png);
+    }
+    .low-ranking{
+        background-image: url(../../../../../assets/images/mountain/assets-top4.png);
+
+    }
+    .two-name{
+        // text-align: center;
+        padding-left: 21px;
+        .name{
+
+            margin: -5px 0 6px;
+            font-size: 26px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #4C4434;
+        }
+        .account{
+            font-size: 22px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #818181;
+        }
+    }
+    .information{
+        text-align: center;
+        padding-left: 227px;
+        .information-text{
+            margin: -5px 0 6px;
+
+            font-size: 26px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #4C4434;
+        }
+        .count{
+            font-size: 22px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #818181
+        }
+    }
+}

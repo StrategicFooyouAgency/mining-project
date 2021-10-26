@@ -191,8 +191,8 @@ const Lease = props => {
                        setLeaseInfoModal(state => ({...state, visible: false}))
                    }}
                    className='CustomDialog'
-                   width='50vw'
-                   style={{height: '85vh'}}
+                   width={916}
+                   style={{height: '812px'}}
                    maskClosable={false}
                >
                    <LeaseInfo onCancel={() => {

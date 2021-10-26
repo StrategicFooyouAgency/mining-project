@@ -187,9 +187,8 @@ const DragonInfo = props => {
                         visible: false
                     }))
                 }}
-                className={tipsModal.type === 'success' ? 'CustomNoHeaderDialog DragInfo-modal' : 'CustomTipDialog DragInfo-modal'}
-                width='40vw'
-                style={{height: '60vh'}}
+                className={tipsModal.type === 'success' ? 'account-modal account-modal-simble DragInfo-modal' : 'account-modal account-modal-simble DragInfo-modal'}
+                width='916px'
             >
                 {
                     tipsModal.type === 'success' ?

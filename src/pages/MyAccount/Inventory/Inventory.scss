@@ -166,6 +166,10 @@
                                         display: block;
                                     }
                                 }
+
+                                img {
+                                    width: 134px;
+                                }
                              }
                         }
                         .dragon-page {
@@ -226,5 +230,874 @@
 
 .account-modal {
     // 龙的弹框
+    &.account-modal-gragon {
+        .modal-body-body {
+            font-weight: 800;
+            .content-a {
+                padding: 30px;
+                display: flex;
+                .content-a-left {
+                    flex: 1 1 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .power {
+                        font-size: 20px;
+                        color: #804809;
+                    }
+                    .image {
+                        width: 235px;
+                        margin-top: 70px;
+                        img {
+                            display: block;
+                            width: 235px;
+                        }
+                    }
+                    .level {
+                        margin-top: 10px;
+                        width: 130px;
+                        height: 35px;
+                        background: #FFD85E;
+                        border: 2px solid #D04E00;
+                        border-radius: 17px;
+                        font-size: 26px;
+                        line-height: 35px;
+                        text-align:center;
+                        color: #804809;
+                    }
+                    .stars {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        .star {
+                            width: 42px;
+                            height: 42px;
+                            background: url(../../../assets/images/xxing.png) no-repeat center / 100% 100%;
+                        }
+                    }
+
+                }
+                .content-a-right {
+                    margin-left: 40px;
+                    width: 547px;
+
+                    .color-box {
+                        display: flex;
+                        .color-box-left {
+                            width: 200px;
+                            flex: 0 0 auto;
+                            .color-name {
+                                font-size: 26px;
+                                color: #804809;
+                            }
+                            .color-count {
+                                font-size: 20px;
+                                color: #804809;
+                            }
+                        }
+                        .color-box-right {
+                            display: flex;
+                            flex-wrap: wrap;
+                            .color-box-item {
+                                margin-right: 10px;
+                                margin-bottom: 5px;
+                                width: 136px;
+                                height: 32px;
+                                border-radius: 5px;
+                                background: red;
+                                font-size: 14px;
+                                color: #292929;
+                                text-align: center;
+                                line-height: 32px;
+                                &:first-child {
+                                    background: url(../../../assets/images/degron-color01.png) no-repeat center / 100% 100%;
+                                }
+                                &:nth-child(2) {
+                                    background: url(../../../assets/images/degron-color02.png) no-repeat center / 100% 100%;
+                                }
+                                &:first-child(3) {
+                                    background: url(../../../assets/images/degron-color03.png) no-repeat center / 100% 100%;
+                                }
+                                &:first-child(4) {
+                                    background: url(../../../assets/images/degron-color04.png) no-repeat center / 100% 100%;
+                                }
+                            }
+
+                            
+                        }
+                    }
+
+                    .information {
+                        margin-top: 16px;
+                        >.title {
+                            line-height: 40px;
+                            font-size: 20px;
+                            color: #804809;
+                        }
+                        .information-box {
+                            display: flex;
+                            border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                            border-image-slice: 8 11 14 fill;
+                            border-image-width: 8px 11px 14px;
+                            .information-box-item {
+                                flex: 1 1 0;
+                                height: 127px;
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                font-size: 16px;
+                                color: #fff;
+                                .information-box-item-title {
+                                    margin-bottom: 5px;
+                                }
+                                .information-box-item-content {
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .attr-skill {
+                        display: flex;
+
+                        .attr {
+                           margin-right: 6px;
+                           flex: 1 1 0;
+                           .attr-title {
+                               padding-left: 8px;
+                                line-height: 40px;
+                                font-size: 20px;
+                                color: #804809;
+                            }
+                            .attr-box {
+                                border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                                border-image-slice: 8 11 14 fill;
+                                border-image-width: 8px 11px 14px;
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding: 24px 20px;
+                                height: 157px;
+                                justify-content: space-between;
+                                align-content: space-between;
+                                .attr-box-item {
+                                    width: 84px;
+                                    height: 32px;
+                                    text-align: center;
+                                    line-height: 32px;
+                                    font-size: 16px;
+                                    color: #fff;
+                                    &:first-child {
+                                        background: url(../../../assets/images/degron-modal-attr-red.png) center / 100% 100%;
+                                    }
+                                    &:last-child {
+                                        background: url(../../../assets/images/degron-modal-attr-dark.png) center / 100% 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .skill {
+                            margin-left: 6px;
+                            flex: 1 1 0;
+                            .skill-title {
+                                padding-left: 8px;
+                                 line-height: 40px;
+                                 font-size: 20px;
+                                 color: #804809;
+                             }
+                             .skill-box {
+                                border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                                border-image-slice: 8 11 14 fill;
+                                border-image-width: 8px 11px 14px;
+                                display: flex;
+                                padding: 24px 20px;
+                                height: 157px;
+                                align-items: center;
+                                .skill-image {
+                                    margin-right: 10px;
+                                }
+                                .skill-content {
+                                    font-size: 16px;
+                                    color: #fff;
+                                    line-height: 1.2em;
+                                }
+                             }
+                        }
+                       
+                    }
+
+                    .body-parts {
+                        .parts-title {
+                            line-height: 40px;
+                            font-size: 20px;
+                            color: #804809;
+                        }
+                        .parts-wrapper {
+                            height: 128px;
+                            border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                            border-image-slice: 8 11 14 fill;
+                            border-image-width: 8px 11px 14px;
+                            padding: 0 24px;
+                            display: flex;
+                            align-items: center;
+
+                            .parts-box {
+                                width: 75px;
+                                height: 62px;
+                                background: url(../../../assets/images/degron-modal-parts.png) center/100% 100%;
+                                padding: 15px 20px;
+                                font-size: 14px;
+                                line-height: 1em;
+                                color: #fff;
+                                text-align: center;
+
+                            }
+                            .parts-text {
+                                padding: 0 5px;
+                                font-size: 14px;
+                                color: #fff;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .modal-body-footer {
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0 5px;
+            .modal-footer-btn {
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                &.game-btn {
+                    color:  #4E6727;
+                    background: url(../../../assets/images/modal-footer-btn01.png) center/100% 100%;
+                }
+
+                &.sell-btn {
+                    color:  #95560F;
+                    background: url(../../../assets/images/modal-footer-btn02.png) center/100% 100%;
+                }
+
+                &.start-btn {
+                    color:  #0F5195;
+                    background: url(../../../assets/images/modal-footer-btn03.png) center/100% 100%;
+                }
+
+                &.frame-btn {
+                    color:  #955B0F;
+                    background: url(../../../assets/images/modal-footer-btn04.png) center/100% 100%;
+                }
+
+                &.gift-btn {
+                    color:  #834212;
+                    background: url(../../../assets/images/modal-footer-btn05.png) center/100% 100%;
+                }
+            }
+        }
+    }
+
+    // upstar 弹框
+    &.account-modal-upstar {
+        font-weight: 800;
+        .modal-body-body {
+            padding: 0 20px;
+            .upstar-section-one {
+                display: flex;
+
+                .section-one-left {
+                    width: 290px;
+                    .upstar-color {
+                        margin-top: 35px;
+                        font-size: 30px;
+                        color: #804809;
+                        line-height: 1em;
+
+                    }
+                    .upstar-color-des {
+                        margin-top: 20px;
+                        font-size: 20px;
+                        color: #804809;
+                        line-height: 1em;
+
+                    }
+                    .upstar-fire {
+                        margin-top: 10px;
+                        width: 133px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #fff;
+                        background: url(../../../assets/images/degron-modal-attr-red.png) center / 100% 100%;
+                    }
+                    .upstar-dark {
+                        margin-top: 10px;
+                        width: 133px;
+                        height: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #fff;
+                        background: url(../../../assets/images/degron-modal-attr-dark.png) center / 100% 100%;
+                    }
+                    .upstar-skill {
+                        margin-top: 12px;
+                        border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                        border-image-slice: 8 11 14 fill;
+                        border-image-width: 8px 11px 14px;
+                        height: 117px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 20px;
+                        color: #fff;
+                        text-align:center;
+                        &>span {
+                            width: 40%;
+                        }
+                        &>div {
+                            width: 60%;
+                            img {
+                                margin-right: 16px;
+                            }
+                        }
+                    }
+                }
+                .section-one-center {
+                    width: 250px;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 235px;
+                    }
+                    .stars {
+                        margin: -30px auto 0;
+                        display: flex;
+                        justify-content: center;
+                        .star {
+                            width: 42px;
+                            height: 42px;
+                            background: url(../../../assets/images/xxing.png) no-repeat center / 100% 100%;
+                        }
+                    }
+                }
+                .section-one-right {
+                    flex: 1 1 0;
+                    .color-box {
+                        margin-top: 50px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .color-box-item {
+                            margin-right: 10px;
+                            margin-bottom: 5px;
+                            width: 136px;
+                            height: 32px;
+                            border-radius: 5px;
+                            background: red;
+                            font-size: 14px;
+                            color: #292929;
+                            text-align: center;
+                            line-height: 32px;
+                            &:first-child {
+                                background: url(../../../assets/images/degron-color01.png) no-repeat center / 100% 100%;
+                            }
+                            &:nth-child(2) {
+                                background: url(../../../assets/images/degron-color02.png) no-repeat center / 100% 100%;
+                            }
+                            &:first-child(3) {
+                                background: url(../../../assets/images/degron-color03.png) no-repeat center / 100% 100%;
+                            }
+                            &:first-child(4) {
+                                background: url(../../../assets/images/degron-color04.png) no-repeat center / 100% 100%;
+                            }
+                        }
+                    }
+                    .parts-wrapper {
+                        margin-top: 18px;
+                        height: 177px;
+                        border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                        border-image-slice: 8 11 14 fill;
+                        border-image-width: 8px 11px 14px;
+                        padding: 0 22px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+
+                        .parts-box {
+                            width: 75px;
+                            height: 62px;
+                            background: url(../../../assets/images/degron-modal-parts.png) center/100% 100%;
+                            padding: 15px 20px;
+                            font-size: 14px;
+                            line-height: 1em;
+                            color: #fff;
+                            text-align: center;
+
+                        }
+                        .parts-text {
+                            padding: 0 5px;
+                            font-size: 14px;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+
+                        }
+                    }
+                }
+
+            }
+            .upstar-section-two {
+                .consume-title {
+                    font-size: 30px;
+                    color: #804809;
+                }
+                .consume-content {
+                    display: flex;
+                    .consume-box {
+                        flex: 1 1 0;
+                        margin-right: 12px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .consume-box-item {
+                            width: 145px;
+                            height: 180px;
+                           
+                            &.consume-box-item-a {
+                                position: relative;
+                                display: flex;
+                                background: url(../../../assets/images/assets03.png) center/100% 100%;
+                                img {
+                                    margin: auto;
+                                    width: 100px;
+                                }
+                                .close {
+                                    position: absolute;
+                                    right: 0;
+                                    top: -5px;
+                                    width: 41px;
+                                    height: 37px;
+                                    background: url(../../../assets/images/assets-close.png) center / 100% 100%;
+                                }
+                            }
+
+                            &.consume-box-item-b {
+                                background: url(../../../assets/images/assets04.png) center/100% 100%;
+                                
+                            }
+                            &.consume-box-item-b-add {
+                                cursor: pointer;
+                                background: url(../../../assets/images/assets06.png) center/100% 100%;
+                            }
+                        }
+                    }
+                    .consume-power {
+                        width: 250px;
+                        padding: 30px 20px;
+                        border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                        border-image-slice: 22 22 27 fill;
+                        border-image-width: 22px 22px 27px;
+                        .stars {
+                            display: flex;
+                            .star {
+                                width: 42px;
+                                height: 42px;
+                                background: url(../../../assets/images/xxing.png) no-repeat center / 100% 100%;
+                            }
+                        }
+                        .power {
+                            margin-top: 46px;
+                            font-size: 20px;
+                            color: #8BB353;
+                        }
+
+                        .power-box {
+                            margin-top: 50px;
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            
+                            .power-box-item {
+                                width: 50%;
+                                line-height: 1em;
+                                text-align: center;
+                                font-size: 20px;
+                                color: #8BB353;
+                                margin-bottom: 20px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .modal-body-footer {
+            .footer-des {
+                color: #fff;
+                font-size: 26px;
+                text-align: center;
+                line-height: 60px;
+            }
+            .star-btn {
+                margin: 0 auto;
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                color:  #0F5195;
+                background: url(../../../assets/images/modal-footer-btn03.png) center/100% 100%;
+            }
+        }
+    }
+
+    // Select 弹框
+    &.account-modal-select {
+       
+        .modal-body-body {
+            .select-content {
+                padding: 20px 10px;
+                display: flex;
+                flex-wrap: wrap;
+                .select-item {
+                    width: 145px;
+                    height: 181px;
+                    display: flex;
+                    background: url(../../../assets/images/assets03.png) center / 100% 100%;
+                    img {
+                        margin: auto;
+                        width: 92px;
+                    }
+                }
+            }
+        }
+        .modal-body-footer {
+            display: flex;
+            .select-btn {
+                margin: auto;
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                color:#95560F;
+                font-weight: 800;
+                background: url(../../../assets/images/modal-footer-btn02.png) center/100% 100%;
+            }
+        }
+    }
+
+
+    // Sell 弹框
+    &.account-modal-sell {
+        font-weight: 800;
+        .modal-body-body {
+            padding: 0 20px;
+            .upstar-section-one {
+                display: flex;
+                align-items: flex-end;
+                .section-one-left {
+                    width: 290px;
+                    .upstar-color {
+                        margin-top: 35px;
+                        font-size: 30px;
+                        color: #804809;
+                        line-height: 1em;
+
+                    }
+                    .upstar-color-des {
+                        margin-top: 20px;
+                        font-size: 20px;
+                        color: #804809;
+                        line-height: 1em;
+
+                    }
+                    .power {
+                        margin-top: 20px;
+                        font-size: 30px;
+                        color: #804809;
+                    }
+                    .fire-dark {
+                        margin-top: 30px;
+                        display: flex;
+                        .upstar-fire {
+                            margin-top: 10px;
+                            width: 133px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            color: #fff;
+                            background: url(../../../assets/images/degron-modal-attr-red.png) center / 100% 100%;
+                        }
+                        .upstar-dark {
+                            margin-top: 10px;
+                            width: 133px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            color: #fff;
+                            background: url(../../../assets/images/degron-modal-attr-dark.png) center / 100% 100%;
+                        }
+                    }
+
+                    .attr-box {
+                        padding: 20px 0;
+                        height: 167px;
+                        margin-top: 30px;
+                        border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                        border-image-slice: 8 11 14 fill;
+                        border-image-width: 8px 11px 14px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .attr-item {
+                            width: 50%;
+                            height: 50%;
+                            text-align: center;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                    }
+
+                   
+                   
+                }
+                .section-one-center {
+                    width: 250px;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 235px;
+                    }
+                    .stars {
+                        margin: -30px auto 0;
+                        display: flex;
+                        justify-content: center;
+                        .star {
+                            width: 42px;
+                            height: 42px;
+                            background: url(../../../assets/images/xxing.png) no-repeat center / 100% 100%;
+                        }
+                    }
+                }
+                .section-one-right {
+                    flex: 1 1 0;
+                    .color-box {
+                        margin-top: 50px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .color-box-item {
+                            margin-right: 10px;
+                            margin-bottom: 5px;
+                            width: 136px;
+                            height: 32px;
+                            border-radius: 5px;
+                            background: red;
+                            font-size: 14px;
+                            color: #292929;
+                            text-align: center;
+                            line-height: 32px;
+                            &:first-child {
+                                background: url(../../../assets/images/degron-color01.png) no-repeat center / 100% 100%;
+                            }
+                            &:nth-child(2) {
+                                background: url(../../../assets/images/degron-color02.png) no-repeat center / 100% 100%;
+                            }
+                            &:first-child(3) {
+                                background: url(../../../assets/images/degron-color03.png) no-repeat center / 100% 100%;
+                            }
+                            &:first-child(4) {
+                                background: url(../../../assets/images/degron-color04.png) no-repeat center / 100% 100%;
+                            }
+                        }
+                    }
+                    .parts-wrapper {
+                        margin-top: 18px;
+                        height: 177px;
+                        border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                        border-image-slice: 8 11 14 fill;
+                        border-image-width: 8px 11px 14px;
+                        padding: 0 22px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+
+                        .parts-box {
+                            width: 75px;
+                            height: 62px;
+                            background: url(../../../assets/images/degron-modal-parts.png) center/100% 100%;
+                            padding: 15px 20px;
+                            font-size: 14px;
+                            line-height: 1em;
+                            color: #fff;
+                            text-align: center;
+
+                        }
+                        .parts-text {
+                            padding: 0 5px;
+                            font-size: 14px;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+
+                        }
+                    }
+                    .upstar-skill {
+                        margin-top: 12px;
+                        border-image-source: url(../../../assets/images/degron-modal-item-bg.png);
+                        border-image-slice: 8 11 14 fill;
+                        border-image-width: 8px 11px 14px;
+                        height: 117px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 20px;
+                        color: #fff;
+                        text-align:center;
+                        &>span {
+                            width: 40%;
+                        }
+                        &>div {
+                            width: 60%;
+                            img {
+                                margin-right: 16px;
+                            }
+                        }
+                    }
+                }
+
+            }
+            .upstar-section-two {
+                padding: 30px 0 60px;
+
+                .input-box {
+                    display: flex;
+                    justify-content: center;
+                    .input-title {
+                        margin-right: 10px;
+                        font-size: 40px;
+                        color: #804809;
+                    }
+                    .input-price {
+                        padding-left: 60px;
+                        color: #fff;
+                        font-size: 40px;
+                        flex: 0 0 auto;
+                        outline: none;;
+                        border: none;
+                        width: 408px;
+                        height: 67px;
+                        background: #676F96;
+                        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                        border-radius: 5px;
+                    }
+                    .input-btn {
+                        cursor: pointer;
+                        margin-left: -8px;
+                        width: 170px;
+                        height: 72px;
+                        line-height: 72px;
+                        font-size: 40px;
+                        text-align: center;
+                        color: #fff;
+                        background: url(../../../assets/images/register-sent.png) center / 100% 100%;
+                    }
+                   
+                }
+                .price-info {
+                    text-align: center;
+                    color: #804809;
+                    font-size: 26px;
+                    line-height: 1em;
+                    margin: 34px 0 0px;
+                }
+            }
+        
+        }
+        .modal-body-footer {
+            display: flex;
+            .modal-footer-btn {
+                margin: auto;
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                color:#95560F;
+                font-weight: 800;
+                background: url(../../../assets/images/modal-footer-btn02.png) center/100% 100%;
+            }
+        }
+    }
+
+    // Gift 弹框
+    &.account-modal-gift {
+        font-weight: 800;
+        .modal-body-body {
+            padding-bottom: 50px;
+            .gift-info {
+                margin: 35px auto 0;
+                width: 746px;
+                text-indent: 2em;
+                color: #95560F;
+                font-size: 35px;
+                line-height: 1.3em;
+            }
+            .gift-input {
+                display: block;
+                margin: 26px auto 0;
+                width: 577px;
+                border: none;
+                height: 67px;
+                background: #676F96;
+                box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+                border-radius: 5px;
+                text-align: center;
+                color: #fff;
+                font-size: 30px;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+        .modal-body-footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .modal-footer-btn {
+               
+                width: 174px;
+                height: 100px;
+                text-align: center;
+                line-height: 90px;
+                font-size: 27px;
+                cursor: pointer;
+                color:#95560F;
+                font-weight: 800;
+                
+                &.gift-btn {
+                    background: url(../../../assets/images/modal-footer-btn05.png) center/100% 100%;
+
+                }
+                &.cancel-btn {
+                    color: #0F5195;
+                     background: url(../../../assets/images/modal-footer-btn03.png) center/100% 100%;
+
+                }
+            }
+        }
+    }
+
+
     
 }

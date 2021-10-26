@@ -1,0 +1,313 @@
+.ConfirmModal{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index:9999
+}
+.ConfirmModal-content{
+    padding: 0 29px;
+    overflow: hidden;
+    margin: auto;
+    width: 946px;
+    height: 1212px;
+    border-image-source: url(../../../../../assets/images/mountain/asset-j1.png);
+    border-image-slice: 10 16 22 fill;
+    border-image-width: 10px 16px 22px;
+    position: relative;
+    .close-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 200px;
+        height: 220px;
+    }
+    .ConfirmModal-body{
+        margin-top: 220px;
+        position: relative;
+        button{
+            position: absolute;
+            font-size: 26px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #95560F;
+            line-height: 75px;
+        }
+        .amount-btn{
+            border: none;
+            width: 172px;
+            height: 73px;
+            background-image: url(../../../../../assets/images/mountain/asset-t609.png) ;
+            background-position: -5px -2px;
+            border-radius: 37px;
+            left: 42px;
+        }
+        .max-btn{
+            width: 172px;
+            height: 73px;
+            border-radius: 37px;
+            background-image: url(../../../../../assets/images/mountain/asset-max.png) ;
+            background-position: -7px -2px;
+            border: none;
+            right: 42px;
+        }
+        input{
+            border: none;
+            outline: none;
+            font-size: 40px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #804809;
+            background-color: transparent;
+            height: 100%;
+            width: 328px;
+        }
+        .input-box{
+            margin-left: 152px;
+            height: 72px;
+            width: 561px;
+            padding: 0 110px;
+            background-image: url(../../../../../assets/images/mountain/asset-t610.png) ;
+            background-size:561px 74px;
+        }
+    }
+    .dragon {
+        margin-top: 20px;
+        .ant-tabs {
+           
+            // 选项卡到导航
+            .ant-tabs-nav {
+                margin-bottom: 0;
+                height: 111px;
+                line-height: 120px;
+                background: url(../../../../../assets/images/assets02.png) no-repeat center / 100% 100%;
+                &::before {
+                    display: none;
+                }
+                .ant-tabs-nav-wrap {
+                    .ant-tabs-nav-list {
+                        padding: 16px 0;
+                        .ant-tabs-tab {
+                            padding: 0 20px;
+                            margin: 0;
+                            font-size: 26px;
+                            font-weight: 800;
+                            width: 173px;
+                            color: #4C4434;
+                            align-items: flex-start;
+                            border: 5px solid;
+                            border-image-source: url(../../../../../assets/images/asset-btn4.png);
+                            border-image-slice: 12 15 26 fill;
+                            border-image-width: 12px 15px 26px;
+                            display: flex;
+                            justify-content: center;
+                            .ant-tabs-tab-btn {
+                                line-height: 56px;
+                                user-select: none;
+                                font-size: 26px;
+                                font-family: Microsoft YaHei !important;
+                                font-weight: 800;
+                                color: #4C4434;
+                                &:active {
+                                    color: #4C4434;
+                                }
+                            }
+                            &.ant-tabs-tab-active {
+                                border-image-source: url(../../../../../assets/images/asset-btn3.png);
+                                .ant-tabs-tab-btn {
+                                    color: #4C4434;
+                                }
+                                
+                            }
+                        }
+                        .ant-tabs-ink-bar {
+                            display: none;
+                        }
+                    }
+                }
+                
+            }
+
+            // 选项卡内容
+            .ant-tabs-content-holder {
+                .ant-tabs-content {
+                    .ant-tabs-tabpane {
+                       &:first-child {
+                           .dragon-content {
+                               display: flex;
+                               flex-wrap: wrap;
+                               padding: 41px 0 38px;
+                               .dragon-item {
+                                   margin-bottom: 10px;
+                                   width: 252px;
+                                   height: 315px;
+                                   background: url(../../../../../assets/images/assets03.png) no-repeat;
+                                   .dragon-item-img {
+                                       padding-top: 30px;
+                                       height: 220px;
+                                       display: flex;
+                                       justify-content: center;
+                                       align-items: center;
+                                   }
+                                   .dragon-item-content {
+                                       margin: 0 30px;
+                                       height: 50px;
+                                       text-align: center;
+                                       font-size: 20px;
+                                       font-weight: 800;
+                                       line-height: 1.2em;
+                                       color: #fff;
+                                       background: linear-gradient(0deg, #F28E26, #FD644F);
+                                   }
+                                }
+                           }
+                       }
+                    }
+                }
+            }
+
+        }
+        
+    }
+   .part-first {
+      background: url(../../../../../assets/images/assets02.png) no-repeat center / 100% 100%;
+        // background-size: 1300px 111px;
+        padding:0 50px;
+        line-height: 111px;
+        padding-top: 5px;
+        height: 111px;
+        font-size: 33px;
+        font-family: Microsoft YaHei !important;
+        font-weight: 800;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ConfirmModal-desciption{
+          padding-left: 54px;
+          margin-top: 16px;
+          .title{
+            line-height: 19px;
+            font-size: 26px;
+            font-family: Microsoft YaHei !important;
+            font-weight: 800;
+            color: #804809;
+            margin-bottom: 36px;
+          }
+          .desciption-item{
+              display: flex;
+              align-items: center;
+            //   justify-content: space-between;
+            margin-bottom: 25px;
+              .title-name{
+                line-height: 26px;
+                font-size: 26px;
+                font-family: Microsoft YaHei !important;
+                font-weight: 800;
+                color: #804809;
+                width: 116px;
+              }
+             button{
+                width: 141px;
+                height: 37px;
+                line-height: 1;
+                margin-right: 29px;
+                font-size: 12px;
+                font-family: Microsoft YaHei !important;
+                font-weight: bold;
+                color: #FFFFFF ;
+             }
+             .btn-blue{
+                background-image:url(../../../../../assets/images/mountain/withdraw.png) ;
+                background-size: 141px 41px;
+                border-radius: 11px;
+                background-position: 0px 0px;
+                border: none;
+             }
+             .btn-black{
+                background-image:url(../../../../../assets/images/mountain/back-btn.png) ;
+                background-size: 147px 40px;
+                border-radius: 11px;
+                background-position: -2px 1px;
+                border: none;
+
+            }
+          }
+    }
+    .assets-content-inner-btn1 {
+          margin: 130px auto 0;
+        font-size: 40px;
+font-family: Microsoft YaHei !important;
+font-weight: bold;
+        width: 460px;
+        height: 150px;
+        color: #95560F;
+        text-align: center;
+        line-height: 131px;
+        border: 5px solid;
+        border-image-source: url(../../../../../assets/images/asset-btn1.png);
+        border-image-slice: 10 16 22 fill;
+        border-image-width: 10px 16px 22px;
+    }
+    .WithDraw-modal{
+        padding: 35px 0 32px 33px;
+        font-size: 22px;
+        font-family: Microsoft YaHei !important;
+        font-weight: 800;
+        color: #804809;
+        line-height: 28px;
+    }
+    .WithDraw-modal-list{
+        display: flex;
+        padding-left:104px;
+        .WithDraw-modal-item{
+          
+            // text-align: center;
+            .WithDraw-modal-item-title{
+                line-height: 69px;
+                font-size: 26px;
+                font-family: Microsoft YaHei !important;
+                font-weight: 800;
+                color: #804809;
+            }
+            button{
+                width: 141px;
+                height: 37px;
+                line-height: 1;
+                margin-right: 29px;
+                font-size: 12px;
+                font-family: Microsoft YaHei !important;
+                font-weight: bold;
+                color: #FFFFFF ;
+             }
+             .btn-blue{
+                background-image:url(../../../../../assets/images/mountain/withdraw.png) ;
+                background-size: 141px 41px;
+                border-radius: 11px;
+                background-position: 0px 0px;
+                border: none;
+             }
+             .btn-black{
+                background-image:url(../../../../../assets/images/mountain/back-btn.png) ;
+                background-size: 147px 40px;
+                border-radius: 11px;
+                background-position: -2px 1px;
+                border: none;
+            
+            }
+            }
+    }
+    .count-text{
+        width: 141px;
+        text-align: center;
+        font-size: 12px;
+font-family: Microsoft YaHei !important;
+font-weight: bold;
+color: #804809;
+line-height: 38px;
+    }
+   
+}

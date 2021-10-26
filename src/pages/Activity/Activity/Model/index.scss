@@ -1,0 +1,182 @@
+.M-Modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 9999
+}
+
+.M-Modal-content {
+  padding: 30px;
+  margin: auto;
+  width: 916px;
+  height: 951px;
+  border: 5px solid;
+  border-image-source: url(../../../../assets/images/mountain/asset-j1.png);
+  border-image-slice: 10 16 22 fill;
+  border-image-width: 10px 16px 22px;
+  position: relative;
+
+  .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+    height: 100px;
+  }
+
+  .title {
+    padding-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Microsoft YaHei !important;
+    font-weight: 800;
+    color: #FFFFFF;
+  }
+
+  .M-Modal-body {
+    .body-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 26px;
+      font-family: Microsoft YaHei;
+      font-weight: 800;
+      color: #804809;
+    }
+
+    .body-2 {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+
+      .body-2-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 26px;
+        font-family: Microsoft YaHei;
+        font-weight: 800;
+        color: #804809;
+
+        .titlr-B {
+          width: 102px;
+          height: 40px;
+          background: #676F96;
+          box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+          border-radius: 5px;
+          color: #FFFFFF;
+          text-align: center;
+        }
+      }
+    }
+
+    .heng {
+      margin-top: 20px;
+      margin-left: 10px;
+      width: 824px;
+      height: 4px;
+      background-color: #804809;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // margin-left: 140px;
+      width: 576.7px;
+      height: 500px;
+
+      .title-1 {
+        width: 134px;
+        height: 40px;
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-family: Microsoft YaHei;
+        font-weight: 800;
+        color: #804809;
+        margin-left: -160px;
+      }
+
+      .content-1 {
+        display: flex;
+        width: 577px;
+        height: 67px;
+        justify-content: space-between;
+
+        .box-2 {
+          width: 577px;
+          height: 67px;
+          background: #676F96;
+          margin-left: 140px;
+          padding-left: 20px;
+          padding-top: 10px;
+          box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.6);
+          border-radius: 5px;
+          // border-image: url(../../../../assets/images/activity/chang.png);
+          // background-size: 141px 41px;
+          // border-radius: 23px;
+          // background-position: 0px 0px;
+          // border: none;
+          font-size: 40px;
+          font-family: Microsoft YaHei;
+          font-weight: 800;
+          color: #FFFFFF;
+
+          .box.txt {
+            width: 40px;
+            margin-top: 10px;
+            margin-left: 20px;
+          }
+
+          .box-blue {
+            width: 170px;
+            height: 72px;
+            text-align: center;
+            line-height: 72px;
+            align-items: center;
+            margin-top: -71px;
+            margin-left: 388px;
+            // background-image: url(../../../../assets/images/activity/blue.png);
+            // background-size: 141px 41px;
+            // border-radius: 23px;
+            border-image-source: url(../../../../assets/images/activity/blue.png);
+            border-image-slice: 10 16 22 fill;
+            border-image-width: 8px 15px 19px;
+          }
+        }
+      }
+
+      .content-2 {
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 178px;
+        height: 20px;
+        font-size: 26px;
+        font-family: Microsoft YaHei;
+        font-weight: 800;
+        color: #804809;
+      }
+
+      .content-3 {
+        width: 260px;
+        height: 150px;
+        margin-top: 100px;
+        margin-left: 200px;
+        border-image-source: url(../../../../assets/images/activity/btnJ.png);
+        border-image-slice: 10 16 22 fill;
+        border-image-width: 8px 15px 19px;
+        font-size: 40px;
+        font-family: Microsoft YaHei;
+        font-weight: 800;
+        text-align: center;
+        line-height: 150px;
+        align-items: center;
+        color: #95560F;
+      }
+    }
+  }
+}

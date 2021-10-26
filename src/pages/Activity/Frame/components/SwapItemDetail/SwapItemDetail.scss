@@ -1,0 +1,114 @@
+.swapItemDetail-container{
+     width: 402px;
+     height: 418px;
+     border: 10px solid;
+     border-image-source: url('../../../../../assets//images/mountain/fram-x2-k3.png');
+     border-image-slice: 49% fill;
+     border-image-width: 50px;
+     border-image-repeat: stretch;
+     padding-top: 10px;
+    .title{
+        height: 16px;
+        font-size: 16px;
+        font-family: Microsoft YaHei !important;
+        font-weight: bold;
+        color: #D16D2A;
+        text-align: right;
+        margin-bottom: 17px;
+        padding-right: 30px;
+    }
+    .numerical{
+        .numerical-content{
+            display: flex;
+            justify-content: right;
+            padding-right: 7px;
+            .numerical-item{
+                font-size: 12px;
+                font-family: Microsoft YaHei !important;
+                font-weight: bold;
+                color: #804809;
+                width: 89px;
+                height: 15px;
+                background: #92D050;
+                border-radius: 8px;
+                margin-right: 3px;
+                line-height: 15px;
+                text-align: center;
+            }
+            .numerical-0{
+                background: #B5C6E7;
+            } 
+        }
+    }
+
+    .detail-information{
+        padding-left: 15px;
+        padding-right: 22px;
+        margin-top: 28px;
+        .information-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 16px;
+            font-family: Microsoft YaHei !important;
+            font-weight: bold;
+            color: #804809;
+            height: 16px;
+            margin-bottom: 22px;
+            .information-key{
+                
+            }
+        }
+    }
+    .detail-foot-btn{
+        .footer-btn-box{
+            font-size: 12px;
+            font-family: Microsoft YaHei !important;
+            font-weight: bold;
+            color: #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // position: relative;
+            button{
+                cursor: pointer;
+                width: 141px;
+                height:  37px; 
+                border: none;
+            }
+            .add-btn-0{
+                margin-right:35px ;
+            }
+            .btn-1{
+                width: 321px;
+                margin-right: 0;
+                background-repeat: no-repeat;
+                background-size: 328px 43px !important;
+                border-radius: 5px !important;
+                background-position: -3px -1px !important;
+            }
+            .black{
+                background-image:url(../../../../../assets/images/mountain/back-btn.png) ;
+                background-position: 0px 1px;
+                background-size: 145px 39px;
+                border-radius: 5px;
+                background-position: -2px 2px;
+            }
+            .approve-btn{
+                margin-right:35px ;
+                background-image:url(../../../../../assets/images/mountain/approve-btn.png) ;
+                background-size: 142px 38px;
+                border-radius: 11px;
+                background-position: 0px 2px
+            }
+            .wthdraw-btn{
+                background-image:url(../../../../../assets/images/mountain/withdraw.png) ;
+                background-size: 141px 37px;
+                border-radius: 11px;
+                background-position: 0px 1px;
+                position: relative;
+            }
+        }
+    }
+
+}

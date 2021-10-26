@@ -51,8 +51,8 @@
             > .DragonInfo-common-image {
                 margin-top: 30px;
                 width: 235px;
-                height: 253px;
-                background: url("./images/long.png") no-repeat;
+                height: 283px;
+                background: url("../../../assets/images/dragon.png") no-repeat;
                 background-size: 100% 100%;
                 cursor: pointer;
             }
@@ -87,11 +87,12 @@
 
             > .DragonInfo-details-l-image-wrapper {
                 margin-top: 20px;
-
+                display: flex;
+                justify-content: center;
                 > .DragonInfo-details-l-image {
-                    width: 235px;
-                    height: 313px;
-                    background: url("./images/long.png") no-repeat;
+                    width: 225px;
+                    height: 285px;
+                    background: url("../../../assets/images/dragon.png") no-repeat;
                     background-size: 100% 100%;
                     cursor: pointer;
                 }
