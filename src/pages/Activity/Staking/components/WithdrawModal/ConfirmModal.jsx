@@ -14,6 +14,7 @@ function ConfirmModal(props) {
   return (
     <div className={'ConfirmModal'}>
       <div className={'ConfirmModal-content'}>
+        <img className={'modal-blackimg'} src={require('../../../../../assets/images/mountain/asset-j1.png').default} alt="" />
         <div className={'close-btn'} onClick={props.handleCloseConfirmModal}></div>
         <div className={'ConfirmModal-body'}>
           <div className="dragon">
@@ -64,7 +65,9 @@ function ConfirmModal(props) {
                     }
                   </div>
                 </div>
-                <div className="assets-content-inner-btn1">Confirm to Stake</div>
+                <div className={'assets-content-inner-btn1-box'}>
+                  <div className="assets-content-inner-btn1">Confirm to Stake</div>
+                </div>
               </TabPane>
               <TabPane tab="WithDraw" key="2">
                 <div className={'WithDraw-modal'}>
@@ -83,7 +86,7 @@ function ConfirmModal(props) {
                     {
                       [{ name: 'Short', color: 'black' }, { name: 'Mid', color: 'black' }
                         , { name: 'Long', color: 'black' }].map((item, index) => (
-                          <div key={index} style={{marginBottom:'25px'}}>
+                          <div key={index} style={{marginBottom:'28px'}}>
                             {renderBtn(item)}
                           </div>
                         ))
@@ -96,7 +99,7 @@ function ConfirmModal(props) {
                     {
                       [{ name: '1000', color: 'black' }, { name: '5000', color: 'black' }
                         , { name: '15000', color: 'black' }].map((item, index) => (
-                          <div key={index} style={{width:'141px',margin:'0 auto 25px'}}>
+                          <div key={index} style={{width:'141px',margin:'0 auto 28px'}}>
                             {renderBtn(item)}
                           </div>
                         ))
@@ -108,13 +111,13 @@ function ConfirmModal(props) {
                     </div>
                     {
                       [{ name: 'receive', color: 'blue' }].map((item, index) => (
-                        <div key={index} style={{marginBottom:'25px'}}>
+                        <div key={index} style={{marginBottom:'28px'}}>
                           {renderBtn(item)}
                         </div>
                       ))
                     }
-                    <div className={'count-text'} style={{marginBottom:'25px'}}>00：25：33</div>
-                    <div className={'count-text'} style={{marginBottom:'25px'}}>6 month</div>
+                    <div className={'count-text'} style={{marginBottom:'28px'}}>00：25：33</div>
+                    <div className={'count-text'} style={{marginBottom:'28px'}}>6 month</div>
                   </div>
                 </div>
               </TabPane>

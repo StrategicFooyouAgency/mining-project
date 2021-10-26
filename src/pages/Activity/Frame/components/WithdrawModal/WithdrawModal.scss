@@ -9,24 +9,24 @@
     z-index:9999
 }
 .wthdrawModal-content{
-    padding:30px ;
+    padding:11px ;
     margin: auto;
     width: 916px;
-    height: 532px;
-    border: 5px solid;
-    border-image-source: url(../../../../../assets/images/mountain/asset-j1.png);
-    border-image-slice: 10 16 22 fill;
-    border-image-width: 10px 16px 22px;
+    height: 498px;
+    background-image: url(../../../../../assets/images/mountain/asset-j1.png);
+    background-position: -20px -11px;
+    background-size: 956px 852px;
     position: relative;
     .close-btn{
         position: absolute;
         right: 0;
         top: 0;
         width: 170px;
-        height: 100px;
+        height: 170px;
     }
     .title{
-        padding-top: 10px;
+        padding-top: 69px;
+        padding-bottom: 32px;
         text-align: center;
         font-size: 40px;
         font-family: Microsoft YaHei !important;
@@ -34,7 +34,7 @@
         color: #FFFFFF;
     }
     .wthdrawModal-body{
-        margin-top: 110px;
+        margin-top: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -53,7 +53,7 @@ color: #95560F;
             background-image: url(../../../../../assets/images/mountain/asset-t609.png) ;
             background-position: -5px -2px;
             border-radius: 37px;
-            left: 20px;
+            left: 37px;
         }
         .max-btn{
             width: 172px;
@@ -62,7 +62,7 @@ color: #95560F;
             background-image: url(../../../../../assets/images/mountain/asset-max.png) ;
             background-position: -7px -2px;
             border: none;
-            right: 20px;
+            right: 37px;
         }
         input{
             border: none;
@@ -82,5 +82,18 @@ color: #95560F;
             background-image: url(../../../../../assets/images/mountain/asset-t610.png) ;
             background-size:561px 74px;
         }
+    }
+    .black-cal{
+        background-image: url('../../../../../assets/images/activity/img-b.png');
+        margin-top: 115px;
+        height: 70px;
+        border-bottom: 11px solid #839A51;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        border-left: 11px solid #839A51;
+        border-right: 11px solid #839A51;
+        width: 915px;
+        position:absolute;
+        left: 1px;
     }
 }

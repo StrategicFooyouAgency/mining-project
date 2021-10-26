@@ -9,25 +9,33 @@
     z-index:9999
 }
 .ConfirmModal-content{
-    padding: 0 29px;
+    padding: 0px 13px;
     overflow: hidden;
     margin: auto;
-    width: 946px;
-    height: 1212px;
-    border-image-source: url(../../../../../assets/images/mountain/asset-j1.png);
-    border-image-slice: 10 16 22 fill;
-    border-image-width: 10px 16px 22px;
+    width: 916px;
+    height: 1012px;
     position: relative;
+    // background-position: -18px -17px;
+    // background-size: 954px 1212px;
+    // background-image: url(../../../../../assets/images/mountain/asset-j1.png);
+    .modal-blackimg{
+        width: 955px;
+        height: 947px;
+        position: absolute;
+        top: -15px;
+        left: -18px;
+    }
     .close-btn{
         position: absolute;
         right: 0;
         top: 0;
-        width: 200px;
-        height: 220px;
+        width: 166px;
+        height: 172px;
     }
     .ConfirmModal-body{
-        margin-top: 220px;
+        margin-top: 173px;
         position: relative;
+        width: 893px;
         button{
             position: absolute;
             font-size: 26px;
@@ -189,6 +197,9 @@
     .ConfirmModal-desciption{
           padding-left: 54px;
           margin-top: 16px;
+          padding-bottom: 1px;
+          background-image: url('../../../../../assets/images/activity/img-r.png');
+          margin-right: .5px;
           .title{
             line-height: 19px;
             font-size: 26px;
@@ -201,7 +212,7 @@
               display: flex;
               align-items: center;
             //   justify-content: space-between;
-            margin-bottom: 25px;
+              margin-bottom: 23px;
               .title-name{
                 line-height: 26px;
                 font-size: 26px;
@@ -226,6 +237,8 @@
                 border-radius: 11px;
                 background-position: 0px 0px;
                 border: none;
+                
+color: #292929;
              }
              .btn-black{
                 background-image:url(../../../../../assets/images/mountain/back-btn.png) ;
@@ -237,8 +250,23 @@
             }
           }
     }
+    .assets-content-inner-btn1-box{
+        width: 914px;
+        height: 212px;
+        margin-left: -10.5px;
+        position: absolute;
+        border-left: 11px solid #839A51;
+        border-right: 11px solid #839A51;
+        border-bottom: 11px solid #839A51;
+        display: flex;
+        align-items: center;
+        padding-top: 8px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
+        background-image: url('../../../../../assets/images/activity/img-b.png');
+    }
     .assets-content-inner-btn1 {
-          margin: 130px auto 0;
+          margin: 0px auto 0;
         font-size: 40px;
 font-family: Microsoft YaHei !important;
 font-weight: bold;
@@ -263,6 +291,7 @@ font-weight: bold;
     .WithDraw-modal-list{
         display: flex;
         padding-left:104px;
+        background-image: url('../../../../../assets/images/activity/img-r.png');
         .WithDraw-modal-item{
           
             // text-align: center;
@@ -289,6 +318,7 @@ font-weight: bold;
                 border-radius: 11px;
                 background-position: 0px 0px;
                 border: none;
+                color: #292929;
              }
              .btn-black{
                 background-image:url(../../../../../assets/images/mountain/back-btn.png) ;
