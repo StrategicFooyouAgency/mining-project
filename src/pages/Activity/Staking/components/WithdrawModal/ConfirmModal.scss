@@ -6,7 +6,8 @@
     left: 0;
     display: flex;
     align-items: center;
-    z-index:9999
+    z-index:5;
+    overflow-y: auto;
 }
 .ConfirmModal-content{
     padding: 0px 13px;
@@ -15,6 +16,7 @@
     width: 916px;
     height: 1012px;
     position: relative;
+    top: 70px;
     // background-position: -18px -17px;
     // background-size: 954px 1212px;
     // background-image: url(../../../../../assets/images/mountain/asset-j1.png);
